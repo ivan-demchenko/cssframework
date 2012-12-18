@@ -60,6 +60,8 @@ h5 { font-size: 1.25em; }
 h6 { font-size: 1em; }
 
 /* inputs */
+optgroup { background: #eee; }
+
 input[type='text'],
 input[type='date'],
 input[type='email'],
@@ -123,6 +125,36 @@ form input.error {
 	background: #FDD8D8;
 }
 /* \ forms */
+
+/* forms sizes */
+form ul {
+    width: 100%;
+    float: left;
+}
+form ul li {
+    display: block;
+    float: left;
+    min-height: 45px;
+}
+form ul li label {
+    display: block;
+}
+form ul.two-col li {
+    width: 48%;
+    padding: 1%;
+}
+form ul.three-col li {
+    width: 31.2%;
+    padding: 1%;
+}
+form ul.four-col li {
+    width: 23%;
+    padding: 1%;
+}
+form ul li.fw {
+    width: 98%
+}
+/* \ forms sizes */
 
 /* \ COMMON TAGS RULES
  -----------------------------------------------------*/
@@ -206,12 +238,37 @@ header#page-header cite {
 /* \ toolbar */
 
 /* messages */
-section.error {
-	background: 
-	border-top: solid 1px #f00;
-	border-bottom: solid 1px #f00;
-	padding: 1em;
+.msg {
+    padding: 1%;
 }
+.msg.fw {
+    width: 98%
+}
+.msg.error {
+	background: #FFE7E7;
+    border-bottom: solid 2px red;
+    border-top: solid 2px red;
+    color: #DB0000;
+}
+.msg.warning {
+    background: #FFFBE7;
+    border-bottom: solid 2px #FFB800;
+    border-top: solid 2px #FFB800;
+    color: #DD9F00;
+}
+.msg.success {
+    background: #F3FFE7;
+    border-bottom: solid 2px #1CE600;
+    border-top: solid 2px #1CE600;
+    color: #1CE600;
+}
+.msg.info {
+    background: #E7F7FF;
+    border-bottom: solid 2px #00C2FF;
+    border-top: solid 2px #00C2FF;
+    color: #00C2FF;
+}
+
 /* \ messages */
 
 /* \ UI

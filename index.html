@@ -14,7 +14,8 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectus turpis, porta eget tincidunt eget, congue non lectus. Nunc mattis, diam porta dictum eleifend, turpis eros tincidunt dolor, non porta lacus magna at dolor. Duis turpis elit, rutrum eget tincidunt nec, lobortis id nisl. Nunc eleifend, sem vel molestie adipiscing, orci ante ultrices neque, a iaculis ligula lorem quis dolor. In nunc arcu, facilisis ut venenatis vel, blandit ut erat. Pellentesque in metus sem, eget iaculis urna.
 			</div>
 		</header>
-		<section class="error">Error text</section>
+        
+        <h2>Toolbar</h2>
 		<div class="toolbar bg-light-gray">
 			<div class="elem fl">
 				<label for="elem1">Text</label>
@@ -49,14 +50,22 @@
 				<input type="reset" value="Reset">
 			</div>
 		</div>
+		
+		<h2>Messages</h2>
+        <section class="msg margined error fw fl">Error text</section>
+        <section class="msg margined warning fw fl">Warning text</section>
+        <section class="msg margined info fw fl">Info text</section>
+        <section class="msg margined success fw fl">Success text</section>
+
+        <h2>Forms</h2>
 		<div class="hw fl block bg-light-gray margined">
-			<h3 class="brd-btm">Form test</h3>
+			<h3 class="brd-btm">Form test 1</h3>
 			<form>
 				<dl>
 					<dt class="txt-r"><label>Item 1</label></dt>
 					<dd>
 						<input type="text"><br>
-						<input type="search">
+						<input type="search" class="">
 					</dd>
 
 					<dt class="txt-r"><label>Item 1</label></dt>
@@ -68,8 +77,151 @@
 					<dd>
 						<input type="date">
 					</dd>
+					
+					<dt class="txt-r"><label>Long Text</label></dt>
+                    <dd>
+                        <textarea>Input here</textarea>
+                    </dd>
 				</dl>
 			</form>
+        </div>
+        <div class="hw fr block bg-light-gray margined">
+			<h3 class="brd-btm">Form test 2</h3>
+			<form>
+			    <ul class="four-col">
+			        <li>
+			            <label>Item</label>
+			            <input type="text">
+			        </li>
+			        <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <select>
+                            <optgroup label="Cars">
+                                <option>BMW</option>
+                                <option>Audi</option>
+                            </optgroup>
+                            <optgroup label="Animals">
+                                <option>Deer</option>
+                                <option>Dog</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li class="fw">
+                        <input type="submit"><input type="reset">
+                    </li>
+			    </ul>
+			</form>
 		</div>
+		<div class="hw fr block bg-light-gray margined">
+            <h3 class="brd-btm">Form test 2</h3>
+            <form>
+                <ul class="three-col">
+                    <li>
+                        <label>Item</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <select>
+                            <optgroup label="Cars">
+                                <option>BMW</option>
+                                <option>Audi</option>
+                            </optgroup>
+                            <optgroup label="Animals">
+                                <option>Deer</option>
+                                <option>Dog</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li class="fw">
+                        <input type="submit"><input type="reset">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="hw fl block bg-light-gray margined">
+            <h3 class="brd-btm">Form test 2</h3>
+            <form>
+                <ul class="two-col">
+                    <li>
+                        <label>Item</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <select>
+                            <optgroup label="Cars">
+                                <option>BMW</option>
+                                <option>Audi</option>
+                            </optgroup>
+                            <optgroup label="Animals">
+                                <option>Deer</option>
+                                <option>Dog</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <input type="search">
+                    </li>
+                    <li>
+                        <label>Item</label>
+                        <select>
+                            <optgroup label="Cars">
+                                <option>BMW</option>
+                                <option>Audi</option>
+                            </optgroup>
+                            <optgroup label="Animals">
+                                <option>Deer</option>
+                                <option>Dog</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li class="fw">
+                        <input type="submit"><input type="reset">
+                    </li>
+                </ul>
+            </form>
+        </div>
 	</body>
 </html>
