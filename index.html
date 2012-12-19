@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/typo.css">
 	</head>
 	<body>
 		<header id="page-header" class="bg-light-gray fw">
@@ -18,12 +20,64 @@
         <h2>Toolbar</h2>
 		<div class="toolbar bg-light-gray">
 			<div class="elem fl">
-				<label for="elem1">Text</label>
-				<input type="text" placeholder="bla bla bla...">
-			</div>
+			    <label>text</label>
+                <input type="text">
+            </div>
+            <div class="elem fl">
+                <label>search</label>
+                <input type="search">
+            </div>
+            <div class="elem fl">
+                <label>color</label>
+                <input type="color">
+            </div>
+            <div class="elem fl">
+                <label>datetime</label>
+                <input type="datetime">
+            </div>
+            <div class="elem fl">
+                <label>date</label>
+                <input type="date">
+            </div>
+            <div class="elem fl">
+                <label>datetime-local</label>
+                <input type="datetime-local">
+            </div>
+            <div class="elem fl">
+                <label>email</label>
+                <input type="email">
+            </div>
+            <div class="elem fl">
+                <label>month</label>
+                <input type="month">
+            </div>
+            <div class="elem fl">
+                <label>number</label>
+                <input type="number">
+            </div>
+            <div class="elem fl">
+                <label>range</label>
+                <input type="range">
+            </div>
+            <div class="elem fl">
+                <label>tel</label>
+                <input type="tel">
+            </div>
+            <div class="elem fl">
+                <label>time</label>
+                <input type="time">
+            </div>
+            <div class="elem fl">
+                <label>url</label>
+                <input type="url">
+            </div>
+            <div class="elem fl">
+                <label>week</label>
+                <input type="week">
+            </div>
 			<div class="elem fl">
-				<label for="elem1">Text</label>
-				<select>
+				<label for="elem2">Text</label>
+				<select id="elem2">
 					<option>Abc</option>
 					<option>Qwerty</option>
 					<option>Abc</option>
@@ -31,16 +85,16 @@
 				</select>
 			</div>
 			<div class="elem fl">
-				<label for="elem1">Text</label>
-				<input type="radio" name="a">
-				<input type="radio" name="a">
-				<input type="radio" name="a">
+				<label for="a">Text</label>
+				<input type="radio" name="ar">
+				<input type="radio" name="ar">
+				<input type="radio" name="ar">
 			</div>
 			<div class="elem fl">
-				<label for="elem1">Text</label>
-				<input type="checkbox" name="a">
-				<input type="checkbox" name="a">
-				<input type="checkbox" name="a">
+				<label for="bc">Text</label>
+				<input type="checkbox" name="bc">
+				<input type="checkbox" name="bc">
+				<input type="checkbox" name="bc">
 			</div>
 			<div class="elem fl">
 				<input type="button" value="Button">
@@ -59,46 +113,70 @@
 
         <h2>Forms</h2>
 		<div class="hw fl block bg-light-gray margined">
-			<h3 class="brd-btm">Form test 1</h3>
+			<h3 class="brd-btm">Regular form with DL/DT/DD</h3>
 			<form>
 				<dl>
-					<dt class="txt-r"><label>Item 1</label></dt>
-					<dd>
-						<input type="text"><br>
-						<input type="search" class="">
-					</dd>
+					<dt class="txt-r"><label>text</label></dt>
+					<dd><input type="text"></dd>
 
-					<dt class="txt-r"><label>Item 1</label></dt>
-					<dd>
-						<input type="search" class="error">
-					</dd>
+					<dt class="txt-r"><label>search</label></dt>
+					<dd><input type="search"></dd>
 
-					<dt class="txt-r"><label>Item 1</label></dt>
-					<dd>
-						<input type="date">
-					</dd>
-					
+					<dt class="txt-r"><label>color</label></dt>
+                    <dd><input type="color"></dd>
+
+                    <dt class="txt-r"><label>datetime</label></dt>
+                    <dd><input type="datetime"></dd>
+
+					<dt class="txt-r"><label>date</label></dt>
+					<dd><input type="date"></dd>
+
+					<dt class="txt-r"><label>datetime-local</label></dt>
+                    <dd><input type="datetime-local"></dd>
+
+                    <dt class="txt-r"><label>email</label></dt>
+                    <dd><input type="email"></dd>
+
+                    <dt class="txt-r"><label>month</label></dt>
+                    <dd><input type="month"></dd>
+
+                    <dt class="txt-r"><label>number</label></dt>
+                    <dd><input type="number"></dd>
+
+                    <dt class="txt-r"><label>range</label></dt>
+                    <dd><input type="range"></dd>
+
+                    <dt class="txt-r"><label>tel</label></dt>
+                    <dd><input type="tel"></dd>
+
+                    <dt class="txt-r"><label>time</label></dt>
+                    <dd><input type="time"></dd>
+
+                    <dt class="txt-r"><label>url</label></dt>
+                    <dd><input type="url"></dd>
+
+                    <dt class="txt-r"><label>week</label></dt>
+                    <dd><input type="week"></dd>
+
 					<dt class="txt-r"><label>Long Text</label></dt>
-                    <dd>
-                        <textarea>Input here</textarea>
-                    </dd>
+                    <dd><textarea>Input here</textarea></dd>
 				</dl>
 			</form>
         </div>
         <div class="hw fr block bg-light-gray margined">
-			<h3 class="brd-btm">Form test 2</h3>
+			<h3 class="brd-btm">Four colums form</h3>
 			<form>
 			    <ul class="four-col">
 			        <li>
-			            <label>Item</label>
+			            <label>text</label>
 			            <input type="text">
 			        </li>
 			        <li>
-                        <label>Item</label>
+                        <label>search</label>
                         <input type="search">
                     </li>
                     <li>
-                        <label>Item</label>
+                        <label>select</label>
                         <select>
                             <optgroup label="Cars">
                                 <option>BMW</option>
@@ -111,20 +189,52 @@
                         </select>
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>color</label>
+                        <input type="color">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>datetime</label>
+                        <input type="datetime">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="text">
+                        <label>datetime-local</label>
+                        <input type="datetime-local">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>month</label>
+                        <input type="month">
+                    </li>
+                    <li>
+                        <label>number</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>range</label>
+                        <input type="range">
+                    </li>
+                    <li>
+                        <label>tel</label>
+                        <input type="tel">
+                    </li>
+                    <li>
+                        <label>time</label>
+                        <input type="time">
+                    </li>
+                    <li>
+                        <label>url</label>
+                        <input type="url">
+                    </li>
+                    <li>
+                        <label>week</label>
+                        <input type="week">
                     </li>
                     <li class="fw">
                         <input type="submit"><input type="reset">
@@ -133,19 +243,19 @@
 			</form>
 		</div>
 		<div class="hw fr block bg-light-gray margined">
-            <h3 class="brd-btm">Form test 2</h3>
+            <h3 class="brd-btm">Three colums form</h3>
             <form>
                 <ul class="three-col">
                     <li>
-                        <label>Item</label>
+                        <label>text</label>
                         <input type="text">
                     </li>
                     <li>
-                        <label>Item</label>
+                        <label>search</label>
                         <input type="search">
                     </li>
                     <li>
-                        <label>Item</label>
+                        <label>select</label>
                         <select>
                             <optgroup label="Cars">
                                 <option>BMW</option>
@@ -158,16 +268,52 @@
                         </select>
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>color</label>
+                        <input type="color">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="text">
+                        <label>datetime</label>
+                        <input type="datetime">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>datetime-local</label>
+                        <input type="datetime-local">
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>month</label>
+                        <input type="month">
+                    </li>
+                    <li>
+                        <label>number</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>range</label>
+                        <input type="range">
+                    </li>
+                    <li>
+                        <label>tel</label>
+                        <input type="tel">
+                    </li>
+                    <li>
+                        <label>time</label>
+                        <input type="time">
+                    </li>
+                    <li>
+                        <label>url</label>
+                        <input type="url">
+                    </li>
+                    <li>
+                        <label>week</label>
+                        <input type="week">
                     </li>
                     <li class="fw">
                         <input type="submit"><input type="reset">
@@ -176,19 +322,19 @@
             </form>
         </div>
         <div class="hw fl block bg-light-gray margined">
-            <h3 class="brd-btm">Form test 2</h3>
+            <h3 class="brd-btm">Two colums form</h3>
             <form>
                 <ul class="two-col">
                     <li>
-                        <label>Item</label>
+                        <label>text</label>
                         <input type="text">
                     </li>
                     <li>
-                        <label>Item</label>
+                        <label>search</label>
                         <input type="search">
                     </li>
                     <li>
-                        <label>Item</label>
+                        <label>select</label>
                         <select>
                             <optgroup label="Cars">
                                 <option>BMW</option>
@@ -201,21 +347,52 @@
                         </select>
                     </li>
                     <li>
-                        <label>Item</label>
-                        <input type="search">
+                        <label>color</label>
+                        <input type="color">
                     </li>
                     <li>
-                        <label>Item</label>
-                        <select>
-                            <optgroup label="Cars">
-                                <option>BMW</option>
-                                <option>Audi</option>
-                            </optgroup>
-                            <optgroup label="Animals">
-                                <option>Deer</option>
-                                <option>Dog</option>
-                            </optgroup>
-                        </select>
+                        <label>datetime</label>
+                        <input type="datetime">
+                    </li>
+                    <li>
+                        <label>datetime-local</label>
+                        <input type="datetime-local">
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>month</label>
+                        <input type="month">
+                    </li>
+                    <li>
+                        <label>number</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label>email</label>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <label>range</label>
+                        <input type="range">
+                    </li>
+                    <li>
+                        <label>tel</label>
+                        <input type="tel">
+                    </li>
+                    <li>
+                        <label>time</label>
+                        <input type="time">
+                    </li>
+                    <li>
+                        <label>url</label>
+                        <input type="url">
+                    </li>
+                    <li>
+                        <label>week</label>
+                        <input type="week">
                     </li>
                     <li class="fw">
                         <input type="submit"><input type="reset">

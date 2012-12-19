@@ -1,79 +1,29 @@
-/* RESET
- -----------------------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body { line-height: 1; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-input, button, textarea, select {
-	margin: 0;
-	padding: 0;
-}
-
-/* \ RESET
- -----------------------------------------------------*/
-
-/* COMMON TAGS RULES
- -----------------------------------------------------*/
-body {
-	font-size: 13px;
-	font-family: "Segoe UI", Arlia, sans-serif;
-}
-h1,h2,h3,h4,h5,h6 { line-height: 1.5em; }
-h1 { font-size: 2.8em; }
-h2 { font-size: 2.1em; }
-h3 { font-size: 1.7em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1em; }
-
 /* inputs */
-optgroup { background: #eee; }
+optgroup {
+    font-style: normal;
+}
 
-input[type='text'],
+input[type='color'],
 input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
 input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='range'], 
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='text'],
 input[type='password'],
-input[type='search'], 
-select, 
-textarea {
+select, textarea, button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* 2 */
+    box-sizing: border-box;
 	border: solid 1px #ccc;
-	font-family: "Segoe UI", Arlia, sans-serif;
-	transition: .3s;
-	-webkit-transition: .3s;
-	padding: .3em;
+	padding: 4px;
 }
 
 input[type='button'],
@@ -83,27 +33,32 @@ button {
 	border: solid 1px #888;
 	background: #888;
 	color: #fff;
-	padding: .3em;
-	height: 31px;
+	padding: 6px 9px;
+	font-size: 1em;
 }
 input[type='submit'] {
 	background: #6DB809;
 	border: solid 1px #6DB809;
 }
-input[type='text']:focus,
+
+input[type='color']:focus,
 input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
 input[type='email']:focus,
+input[type='month']:focus,
+input[type='number']:focus,
+input[type='range']:focus, 
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='week']:focus,
+input[type='text']:focus,
 input[type='password']:focus,
 select:focus,
 textarea:focus {
 	background: #FCFAE1;
-}
-
-input[type='text'],
-input[type='date'],
-input[type='email'],
-input[type='password'] {
-	height: 21px;
 }
 
 /* forms */
@@ -135,6 +90,24 @@ form ul li {
     display: block;
     float: left;
     min-height: 45px;
+    position: relative;
+}
+form ul li input[type='color'],
+form ul li input[type='date'],
+form ul li input[type='datetime'],
+form ul li input[type='datetime-local'],
+form ul li input[type='email'],
+form ul li input[type='month'],
+form ul li input[type='number'],
+form ul li input[type='range'], 
+form ul li input[type='search'],
+form ul li input[type='tel'],
+form ul li input[type='time'],
+form ul li input[type='url'],
+form ul li input[type='week'],
+form ul li input[type='text'],
+select, textarea {
+    width: 100%;
 }
 form ul li label {
     display: block;
@@ -220,20 +193,33 @@ header#page-header cite {
 }
 .toolbar .elem {
 	position: relative;
-	padding: 0 10px;
-	margin: 3px 0;
 	border-right: solid 1px #aaa;
+	padding: 0 6px;
+	margin: 3px 0;
 }
 .toolbar .elem:last-child {
 	border: none;
 }
 .toolbar .elem label {
 	position: relative;
+	display: block;
 }
 .toolbar .elem input[type='radio'],
 .toolbar .elem input[type='checkbox'] {
 	height: 31px;
+	width: auto;
     vertical-align: middle;
+}
+.toolbar .elem input[type='submit'],
+.toolbar .elem input[type='reset'],
+.toolbar .elem input[type='button'],
+.toolbar .elem button {
+    padding: 10px 9px 9px;
+    height: 47px;
+}
+
+.toolbar .elem select {
+    padding: 3px;
 }
 /* \ toolbar */
 
