@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/typo.css">
 	</head>
 	<body>
-		<header id="page-header" class="bg-light-gray fw">
+		<header id="page-header" class="bg-light-gray fw bb1">
 			<div class="hw fl">
 				<h1>Test page</h1>
 				<cite>This page is just a demo</cite>
@@ -16,9 +16,9 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectus turpis, porta eget tincidunt eget, congue non lectus. Nunc mattis, diam porta dictum eleifend, turpis eros tincidunt dolor, non porta lacus magna at dolor. Duis turpis elit, rutrum eget tincidunt nec, lobortis id nisl. Nunc eleifend, sem vel molestie adipiscing, orci ante ultrices neque, a iaculis ligula lorem quis dolor. In nunc arcu, facilisis ut venenatis vel, blandit ut erat. Pellentesque in metus sem, eget iaculis urna.
 			</div>
 		</header>
-        
+
         <h2>Toolbar</h2>
-		<div class="toolbar bg-light-gray">
+		<div class="toolbar bg-light-gray bb1 bt1">
 			<div class="elem fl">
 			    <label>text</label>
                 <input type="text">
@@ -106,14 +106,22 @@
 		</div>
 		
 		<h2>Messages</h2>
-        <section class="msg margined error fw fl">Error text</section>
-        <section class="msg margined warning fw fl">Warning text</section>
-        <section class="msg margined info fw fl">Info text</section>
-        <section class="msg margined success fw fl">Success text</section>
+        <section class="msg mb1 error">Error text</section>
+        <section class="msg mb1 warning">Warning text</section>
+        <section class="msg mb1 info">Info text</section>
+        <section class="msg mb1 success">Success text</section>
 
+        <h2>Links and texts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <a href="/">Home</a>,
+        <a href="http://www.google.com">Google</a>,
         <h2>Forms</h2>
-		<div class="hw fl block bg-light-gray margined">
-			<h3 class="brd-btm">Regular form with DL/DT/DD</h3>
+		<div class="hw fl block bg-light-gray bb1">
+			<h3 class="clr bb1">Regular form with DL/DT/DD</h3>
 			<form>
 				<dl>
 					<dt class="txt-r"><label>text</label></dt>
@@ -163,8 +171,8 @@
 				</dl>
 			</form>
         </div>
-        <div class="hw fr block bg-light-gray margined">
-			<h3 class="brd-btm">Four colums form</h3>
+        <div class="hw fr block bg-light-gray bb1">
+			<h3 class="clr bb1">Four colums form</h3>
 			<form>
 			    <ul class="four-col">
 			        <li>
@@ -242,8 +250,8 @@
 			    </ul>
 			</form>
 		</div>
-		<div class="hw fr block bg-light-gray margined">
-            <h3 class="brd-btm">Three colums form</h3>
+		<div class="hw fr block bg-light-gray bb1">
+            <h3 class="clr bb1">Three colums form</h3>
             <form>
                 <ul class="three-col">
                     <li>
@@ -321,8 +329,8 @@
                 </ul>
             </form>
         </div>
-        <div class="hw fl block bg-light-gray margined">
-            <h3 class="brd-btm">Two colums form</h3>
+        <div class="hw fl block bg-light-gray bb1">
+            <h3 class="clr bb1">Two colums form</h3>
             <form>
                 <ul class="two-col">
                     <li>
@@ -400,5 +408,19 @@
                 </ul>
             </form>
         </div>
+        
+        <h3 class="clr">Tables</h3>
+        <table class="fw">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tfoot></tfoot>
+            <tbody></tbody>
+        </table>
 	</body>
 </html>

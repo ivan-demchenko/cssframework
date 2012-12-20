@@ -22,23 +22,23 @@ select, textarea, button {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; /* 2 */
     box-sizing: border-box;
-	border: solid 1px #ccc;
-	padding: 4px;
+    border: solid 1px #ccc;
+    padding: 4px;
 }
 
 input[type='button'],
 input[type='submit'],
 input[type='reset'],
 button {
-	border: solid 1px #888;
-	background: #888;
-	color: #fff;
-	padding: 6px 9px;
-	font-size: 1em;
+    border: solid 1px #888;
+    background: #888;
+    color: #fff;
+    padding: 6px 9px;
+    font-size: 1em;
 }
 input[type='submit'] {
-	background: #6DB809;
-	border: solid 1px #6DB809;
+    background: #6DB809;
+    border: solid 1px #6DB809;
 }
 
 input[type='color']:focus,
@@ -58,26 +58,24 @@ input[type='text']:focus,
 input[type='password']:focus,
 select:focus,
 textarea:focus {
-	background: #FCFAE1;
+    background: #FCFAE1;
 }
 
 /* forms */
 form {}
 form dl { margin: 1em 0; }
 form dl dt {
-	clear: left;
+    clear: left;
     float: left;
     padding: 0.5em 0.5em 0 0;
     width: 140px;
 }
-form dl dd {
-	margin: 0 0 0.5em 150px;
-}
+form dl dd { margin: 0 0 0.5em 150px; }
 
 form input.error {
-	color: #f00;
-	border: solid 1px #f00;
-	background: #FDD8D8;
+    color: #f00;
+    border: solid 1px #f00;
+    background: #FDD8D8;
 }
 /* \ forms */
 
@@ -85,12 +83,25 @@ form input.error {
 form ul {
     width: 100%;
     float: left;
+    padding: 0;
 }
 form ul li {
     display: block;
     float: left;
-    min-height: 45px;
+    min-height: 50px;
     position: relative;
+}
+form input,
+form select,
+form textarea {
+    width: 140px;
+}
+form input[type='submit'],
+form input[type='reset'],
+form input[type='radio'],
+form input[type='checkbox'],
+form input[type='button'] {
+    width: auto;
 }
 form ul li input[type='color'],
 form ul li input[type='date'],
@@ -107,7 +118,7 @@ form ul li input[type='url'],
 form ul li input[type='week'],
 form ul li input[type='text'],
 select, textarea {
-    width: 100%;
+    width: 100% !important;
 }
 form ul li label {
     display: block;
@@ -141,15 +152,34 @@ form ul li.fw {
 .fl { float: left; }
 .fr { float: right; }
 
-.margined { margin: 1em 0; }
+/* margins */
+.mo1 { margin: 1em; }
+.mt1 { margin-top: 1em; }
+.mb1 { margin-bottom: 1em; }
+.ml1 { margin-left: 1em; }
+.mr1 { margin-right: 1em; }
 
-.block { padding: 2%; }
-.block.fw { width: 96%; }
-.block.hw { width: 46%; }
-.block.tw { width: 29.32%; }
-.block.qw { width: 21%; }
+/* paddings */
+.po1 { padding: 1em; }
+.pt1 { padding-top: 1em; }
+.pb1 { padding-bottom: 1em; }
+.pl1 { padding-left: 1em; }
+.pr1 { padding-right: 1em; }
 
-.brd-btm { border-bottom: solid 1px #ccc; }
+/* bordering */
+.bt1 { border-top: solid 1px #ccc; }
+.bb1 { border-bottom: solid 1px #ccc; }
+.bl1 { border-left: solid 1px #ccc; }
+.br1 { border-right: solid 1px #ccc; }
+
+.clr { clear: both; float: none; }
+.inline { display: inline-block; }
+
+.block { padding: 1%; }
+.block.fw { width: 98%; }
+.block.hw { width: 48%; }
+.block.tw { width: 31.32%; }
+.block.qw { width: 23%; }
 
 .txt-r { text-align: right; }
 .txt-l { text-align: left; }
@@ -171,67 +201,68 @@ form ul li.fw {
  -----------------------------------------------------*/
 
 header#page-header {
-	padding: 2%;
-	border-bottom: solid 1px #aaa;
-	margin-bottom: 10px;
+    padding: 2%;
+    margin-bottom: 10px;
 }
 header#page-header.fw {
-	width: 96%;
-	float: left;
+    width: 96%;
+    float: left;
 }
 header#page-header cite {
-	font-style: italic;
+    font-style: italic;
 }
 
 /* UI
  -----------------------------------------------------*/
 /* toolbar */
 .toolbar {
-	padding: 1%;
-	float: left;
-	width: 98%;
+    padding: 1%;
+    float: left;
+    width: 98%;
 }
 .toolbar .elem {
-	position: relative;
-	border-right: solid 1px #aaa;
-	padding: 0 6px;
-	margin: 3px 0;
+    position: relative;
+    border-right: solid 1px #aaa;
+    padding: 0 6px;
+    margin: 3px 0;
+    min-height: 39px;
 }
 .toolbar .elem:last-child {
-	border: none;
+    border: none;
 }
 .toolbar .elem label {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
+}
+.toolbar .elem input,
+.toolbar .elem select {
+    padding: 0;
+    height: 21px;
 }
 .toolbar .elem input[type='radio'],
 .toolbar .elem input[type='checkbox'] {
-	height: 31px;
-	width: auto;
+    height: 22px;
+    width: auto;
     vertical-align: middle;
 }
 .toolbar .elem input[type='submit'],
 .toolbar .elem input[type='reset'],
 .toolbar .elem input[type='button'],
 .toolbar .elem button {
-    padding: 10px 9px 9px;
-    height: 47px;
-}
-
-.toolbar .elem select {
-    padding: 3px;
+    height: 48px;
+    padding: 0 8px;
 }
 /* \ toolbar */
 
 /* messages */
 .msg {
-    padding: 1%;
+    padding: .5em;
 }
 .msg.fw {
-    width: 98%
+    width: 99%
 }
 .msg.error {
-	background: #FFE7E7;
+    background: #FFE7E7;
     border-bottom: solid 2px red;
     border-top: solid 2px red;
     color: #DB0000;
