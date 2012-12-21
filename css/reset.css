@@ -50,6 +50,7 @@ input, button, textarea, select {
     margin: 0;
     height: 31px;
     font-family: "Segoe UI",Arial,sans-serif;
+    vertical-align: middle;
 }
 input[type='submit'],
 input[type='reset'],
