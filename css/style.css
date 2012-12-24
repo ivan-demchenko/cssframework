@@ -19,6 +19,19 @@ legend {
     padding-right: 5px;
 }
 
+keygen {
+    width: 220px;
+    border: solid 1px #ccc;
+    background: #fff;
+    padding: 4px;
+}
+
+.loading {
+    background-image: url("../images/loader.gif");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
 input[type='color'],
 input[type='date'],
 input[type='datetime'],
@@ -41,6 +54,7 @@ select, textarea {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; /* 2 */
     box-sizing: border-box;
+    width: 220px;
 }
 
 input[type='color']:focus,
@@ -302,8 +316,23 @@ header#page-header cite {
 }
 .toolbar .elem input,
 .toolbar .elem select {
-    padding: 0;
+    font-size: 12px;
     height: 21px;
+    padding: 0;
+    width: auto;
+}
+.toolbar .elem select,
+.toolbar .elem input[type='text'], 
+.toolbar .elem input[type='search'],
+.toolbar .elem input[type='text'],
+.toolbar .elem input[type='range'],
+.toolbar .elem input[type='email'],
+.toolbar .elem input[type='tel'],
+.toolbar .elem input[type='url'] {
+    width: 90px;
+}
+.toolbar .elem input[type='color'] {
+    width: 43px;
 }
 .toolbar .elem input[type='radio'],
 .toolbar .elem input[type='checkbox'] {
@@ -315,7 +344,9 @@ header#page-header cite {
 .toolbar .elem input[type='reset'],
 .toolbar .elem input[type='button'],
 .toolbar .elem button {
+    font-size: 14px;
     height: auto;
+    width: auto;
     padding: 14px 8px;
 }
 /* \ toolbar */

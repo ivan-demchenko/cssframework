@@ -138,7 +138,8 @@
             <li>Item 2</li>
         </ul>
         <a href="/">Home</a>,
-        <a href="http://www.google.com">Google</a>,
+        <a title="This is a link with hint" href="http://www.google.com">Google</a>,
+        <a title="Go to Google and search some info" href="http://www.google.com">To do google</a>
         <h2>Forms</h2>
 		<div class="hw fl block bg-light-gray bb1">
 			<h3 class="clr bb1">Regular form with DL/DT/DD</h3>
@@ -147,17 +148,29 @@
 			        <legend>First Section</legend>
 			        <dl>
 			            <dt class="txt-r">Abc</dt>
-			            <dd><input type="text"></dd>
+			            <dd><input type="text" class="loading"></dd>
 			            
 			            <dt class="txt-r">Abc</dt>
                         <dd><input type="text"></dd>
+                        
+                        <dt class="txt-r">Data List</dt>
+                        <dd>
+                            <input type="text" name="search" id="search" placeholder="Browser..." list="browsers" autocomplete="off">
+                            <datalist id="browsers">
+                              <option value="Internet Explorer">
+                              <option value="Firefox">
+                              <option value="Chrome">
+                              <option value="Opera">
+                              <option value="Safari">
+                            </datalist>
+                        </dd>
 			        </dl>
 			    </fieldset>
 			    <fieldset>
 			        <legend>Second Section</legend>
     				<dl>
     					<dt class="txt-r"><label>text</label></dt>
-    					<dd><input type="text"></dd>
+    					<dd><input pattern="[A-Za-z]{3}" required type="text"></dd>
     
     					<dt class="txt-r"><label>search</label></dt>
     					<dd><input type="search"></dd>
@@ -204,6 +217,9 @@
     
     					<dt class="txt-r"><label>Long Text</label></dt>
                         <dd><textarea>Input here</textarea></dd>
+                        
+                        <dt></dt>
+                        <dd><input type="submit"></dd>
     				</dl>
 				</fieldset>
 			</form>
@@ -293,7 +309,7 @@
                 <ul class="three-col">
                     <li>
                         <label>text</label>
-                        <input type="text">
+                        <input type="text" class="loading">
                     </li>
                     <li>
                         <label>search</label>
@@ -372,7 +388,7 @@
                 <ul class="two-col">
                     <li>
                         <label>text</label>
-                        <input type="text">
+                        <input type="text" class="loading">
                     </li>
                     <li>
                         <label>search</label>

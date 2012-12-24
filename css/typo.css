@@ -13,6 +13,42 @@ h4 { font-size: 1.5em; }
 h5 { font-size: 1.25em; }
 h6 { font-size: 1em; }
 
+:target {
+    border-bottom: dashed 1px #ccc;
+}
+:visited {
+    color: #5a80a5;
+    border: none;
+}
+[title] {
+    position: relative;
+}
+[title]:hover:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 10px;
+    content: attr(title);
+    margin: -40px 0 0 0;
+    font-size: 12px;
+    bottom: 20px;
+    left: 0;
+    line-height: 1;
+    width: 140px;
+}
+[title]:hover:before {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    content: ' ';
+    opacity: .8;
+    left: 50%;
+    margin-left: -10px;
+}
+
 a {
     outline: none;
     text-decoration: none;
