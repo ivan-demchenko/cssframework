@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 20px;
+    font-size: 14px;
 }
 ol, ul {
     list-style: none;
@@ -43,18 +44,18 @@ table {
     border-spacing: 0;
 }
 input, button, textarea, select {
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
+    display: inline-block;
     margin: 0;
-    height: 31px;
+    padding: 4px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
     font-family: "Segoe UI",Arial,sans-serif;
-    vertical-align: middle;
 }
 input[type='submit'],
 input[type='reset'],
 input[type='button'],
 button {
     height: auto;
+    -webkit-appearance: button;
 }
