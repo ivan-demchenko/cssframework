@@ -1,6 +1,22 @@
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
 /* inputs */
-optgroup {
-    font-style: normal;
+optgroup { font-style: normal; }
+
+fieldset {
+    padding: 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: dotted 1px #AAA;
+}
+
+legend {
+    margin-left: 0px;
+    padding-right: 5px;
 }
 
 input[type='color'],
@@ -21,6 +37,10 @@ input[type='password'],
 select, textarea {
     border: solid 1px #ccc;
     background-color: #FFF;
+    padding: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* 2 */
+    box-sizing: border-box;
 }
 
 input[type='color']:focus,
@@ -51,8 +71,7 @@ button {
     border: 1px solid #888;
     color: #FFFFFF;
     cursor: pointer;
-    height: 30px;
-    line-height: 18px;
+    padding: 4px 6px;
 }
 
 input[type='button']:hover,
@@ -68,13 +87,36 @@ input[type='submit'] {
     border: solid 1px #6DB809;
 }
 
+input[type='button'].big,
+input[type='submit'].big,
+input[type='reset'].big,
+button.big,
+.button.big {
+    font-size: 18px;
+    height: 43px;
+    line-height: 26px;
+    margin-bottom: 0;
+    padding: 7px 10px 9px;
+}
+
+input[type='button'].small,
+input[type='submit'].small,
+input[type='reset'].small,
+button.small,
+.button.small {
+    font-size: 11px;
+    padding: 0 3px 1px;
+}
+
 .button {
-    border: solid 1px #888;
     background: #888;
-    color: #fff;
+    border: 1px solid #888;
+    color: #FFF;
+    padding: 4px 6px;
 }
 .button:hover {
     text-decoration: none;
+    background: #888;
     color: #f0f0f0;
 }
 
@@ -249,7 +291,7 @@ header#page-header cite {
     border-right: solid 1px #aaa;
     padding: 0 6px;
     margin: 3px 0;
-    min-height: 39px;
+    min-height: 50px;
 }
 .toolbar .elem:last-child {
     border: none;
@@ -273,8 +315,8 @@ header#page-header cite {
 .toolbar .elem input[type='reset'],
 .toolbar .elem input[type='button'],
 .toolbar .elem button {
-    height: 48px;
-    padding: 0 8px;
+    height: auto;
+    padding: 14px 8px;
 }
 /* \ toolbar */
 
@@ -964,4 +1006,32 @@ header#page-header cite {
 }
 .icon-user-md:before {
   content: "\f200";
+}
+
+/* Tables
+ -------------------------------------------------------------------- */
+table {
+}
+table th,
+table td {
+    padding: 4px;
+}
+table thead tr {
+    background: #f0f0f0;
+}
+table thead th {
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+}
+table tbody tr {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+table tbody tr:hover {
+    background: #fff7ec;
 }

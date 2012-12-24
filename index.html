@@ -109,13 +109,20 @@
 		<div class="po1">
 		  Hello!
 		  <input type="text" name="some_name" value="" id="some_name">
-		  <button class="icon-plus-sign">Button</button>
+
+		  <button class="icon-asterisk">Button</button>
 		  <a href="/" class="button icon-asterisk">Button</a>
-		  Check Box here
-		  <input type="checkbox" name="ch1" value="0" id="ch1">
-		  Radio here
-		  <input type="radio" name="rb1" value="1" id="rb1">
-		  <input type="radio" name="rb1" value="2" id="rb2">
+
+		  <button class="icon-plus small">Add One</button>
+          <a href="/" class="button icon-plus small">Add One</a>
+
+		  <button class="icon-plus big">Add One</button>
+		  <a href="/" class="button icon-plus big">Add One</a>
+
+		  <label>
+		      <input type="checkbox" name="ch1" value="0" id="ch1">
+		      Check Box
+		  </label>
 		</div>
 		
 		<h2>Messages</h2>
@@ -136,52 +143,69 @@
 		<div class="hw fl block bg-light-gray bb1">
 			<h3 class="clr bb1">Regular form with DL/DT/DD</h3>
 			<form>
-				<dl>
-					<dt class="txt-r"><label>text</label></dt>
-					<dd><input type="text"></dd>
-
-					<dt class="txt-r"><label>search</label></dt>
-					<dd><input type="search"></dd>
-
-					<dt class="txt-r"><label>color</label></dt>
-                    <dd><input type="color"></dd>
-
-                    <dt class="txt-r"><label>datetime</label></dt>
-                    <dd><input type="datetime"></dd>
-
-					<dt class="txt-r"><label>date</label></dt>
-					<dd><input type="date"></dd>
-
-					<dt class="txt-r"><label>datetime-local</label></dt>
-                    <dd><input type="datetime-local"></dd>
-
-                    <dt class="txt-r"><label>email</label></dt>
-                    <dd><input type="email"></dd>
-
-                    <dt class="txt-r"><label>month</label></dt>
-                    <dd><input type="month"></dd>
-
-                    <dt class="txt-r"><label>number</label></dt>
-                    <dd><input type="number"></dd>
-
-                    <dt class="txt-r"><label>range</label></dt>
-                    <dd><input type="range"></dd>
-
-                    <dt class="txt-r"><label>tel</label></dt>
-                    <dd><input type="tel"></dd>
-
-                    <dt class="txt-r"><label>time</label></dt>
-                    <dd><input type="time"></dd>
-
-                    <dt class="txt-r"><label>url</label></dt>
-                    <dd><input type="url"></dd>
-
-                    <dt class="txt-r"><label>week</label></dt>
-                    <dd><input type="week"></dd>
-
-					<dt class="txt-r"><label>Long Text</label></dt>
-                    <dd><textarea>Input here</textarea></dd>
-				</dl>
+			    <fieldset>
+			        <legend>First Section</legend>
+			        <dl>
+			            <dt class="txt-r">Abc</dt>
+			            <dd><input type="text"></dd>
+			            
+			            <dt class="txt-r">Abc</dt>
+                        <dd><input type="text"></dd>
+			        </dl>
+			    </fieldset>
+			    <fieldset>
+			        <legend>Second Section</legend>
+    				<dl>
+    					<dt class="txt-r"><label>text</label></dt>
+    					<dd><input type="text"></dd>
+    
+    					<dt class="txt-r"><label>search</label></dt>
+    					<dd><input type="search"></dd>
+    
+    					<dt class="txt-r"><label>color</label></dt>
+                        <dd><input type="color"></dd>
+    
+                        <dt class="txt-r"><label>datetime</label></dt>
+                        <dd><input type="datetime"></dd>
+    
+    					<dt class="txt-r"><label>date</label></dt>
+    					<dd><input type="date"></dd>
+    
+    					<dt class="txt-r"><label>datetime-local</label></dt>
+                        <dd><input type="datetime-local"></dd>
+    
+                        <dt class="txt-r"><label>email</label></dt>
+                        <dd><input type="email"></dd>
+    
+                        <dt class="txt-r"><label>month</label></dt>
+                        <dd><input type="month"></dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Third Section</legend>
+                    <dl>
+                        <dt class="txt-r"><label>number</label></dt>
+                        <dd><input type="number"></dd>
+    
+                        <dt class="txt-r"><label>range</label></dt>
+                        <dd><input type="range"></dd>
+    
+                        <dt class="txt-r"><label>tel</label></dt>
+                        <dd><input type="tel"></dd>
+    
+                        <dt class="txt-r"><label>time</label></dt>
+                        <dd><input type="time"></dd>
+    
+                        <dt class="txt-r"><label>url</label></dt>
+                        <dd><input type="url"></dd>
+    
+                        <dt class="txt-r"><label>week</label></dt>
+                        <dd><input type="week"></dd>
+    
+    					<dt class="txt-r"><label>Long Text</label></dt>
+                        <dd><textarea>Input here</textarea></dd>
+    				</dl>
+				</fieldset>
 			</form>
         </div>
         <div class="hw fr block bg-light-gray bb1">
@@ -426,14 +450,62 @@
         <table class="fw">
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Caption</th>
+                    <th>Phone</th>
                 </tr>
             </thead>
             <tfoot></tfoot>
-            <tbody></tbody>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Abc Hefes</td>
+                    <td>Jsnehdls s d</td>
+                    <td>+23 232 232 21</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Adfwd Sdfsdd</td>
+                    <td>Jwnwysxe s dssd</td>
+                    <td>+23 232 232 21</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kshde Jsndsjs</td>
+                    <td>Kasneuysjs dwdw</td>
+                    <td>+23 232 232 21</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Yshdewj sd sd </td>
+                    <td>Shd sjd sd</td>
+                    <td>+23 232 232 21</td>
+                </tr>
+            </tbody>
         </table>
+        
+        <h3>Clean form</h3>
+        <form>
+            <fieldset>
+                <legend>Login form</legend>
+                <dl>
+                    <dt class="txt-r"><label for="login">Login</label></dt>
+                    <dd>
+                        <input id="login" type="text">
+                    </dd>
+                    
+                    <dt class="txt-r"><label for="login">Password</label></dt>
+                    <dd>
+                        <input id="login" type="text">
+                    </dd>
+                    
+                    <dt></dt>
+                    <dd>
+                        <input type="submit"><input type="reset">
+                    </dd>
+                </dl>
+            </fieldset>
+        </form>
 	</body>
 </html>
