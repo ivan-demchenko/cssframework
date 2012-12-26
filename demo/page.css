@@ -1,0 +1,39 @@
+header#main {
+    height: 58px;
+    border-bottom: solid 1px #ccc;
+}
+#search-box {
+    padding-top: 13px;
+}
+.bdy {
+    top: 59px;
+    bottom: 22px;
+}
+aside#folders {
+}
+section#body {
+}
+#filter {
+    float: left;
+    background: #e1e1e1;
+    border-bottom: solid 2px #ccc;
+}
+.email-item {
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    float: left;
+    width: 98%;
+    border-bottom: solid 1px #ccc;
+}
+
+.email-item:hover {
+    background: #0080ff;
+    color: #fff;
+}
+footer#status-bar {
+    height: 22px;
+    background: #555;
+    color: #fff;
+}

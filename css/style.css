@@ -225,26 +225,37 @@ form ul li.fw {
 
 /* HELPER
  -----------------------------------------------------*/
-.fw { width: 100%; }
-.hw { width: 50%; }
-.tw { width: 33.32%; }
-.qw { width: 25%; }
+.scrl { overflow: auto; }
+
+.w100 { width: 100%; }
+.w80 { width: 80%; }
+.w60 { width: 60% }
+.w75 { width: 75%; }
+.w50 { width: 50%; }
+.w33 { width: 33.3332%; }
+.w25 { width: 25%; }
+.w20 { width: 20%; }
+
 .fl { float: left; }
 .fr { float: right; }
 
+.pf { position: fixed; }
+.pa { position: absolute; }
+.pr { position: relative; }
+
 /* margins */
-.mo1 { margin: 1em; }
-.mt1 { margin-top: 1em; }
-.mb1 { margin-bottom: 1em; }
-.ml1 { margin-left: 1em; }
-.mr1 { margin-right: 1em; }
+.mo1 { margin: 1%; }
+.mt1 { margin-top: 1%; }
+.mb1 { margin-bottom: 1%; }
+.ml1 { margin-left: 1%; }
+.mr1 { margin-right: 1%; }
 
 /* paddings */
-.po1 { padding: 1em; }
-.pt1 { padding-top: 1em; }
-.pb1 { padding-bottom: 1em; }
-.pl1 { padding-left: 1em; }
-.pr1 { padding-right: 1em; }
+.po1 { padding: 1%; }
+.pt1 { padding-top: 1%; }
+.pb1 { padding-bottom: 1%; }
+.pl1 { padding-left: 1%; }
+.pr1 { padding-right: 1%; }
 
 /* bordering */
 .bt1 { border-top: solid 1px #ccc; }
@@ -254,12 +265,6 @@ form ul li.fw {
 
 .clr { clear: both; float: none; }
 .inline { display: inline-block; }
-
-.block { padding: 1%; }
-.block.fw { width: 98%; }
-.block.hw { width: 48%; }
-.block.tw { width: 31.32%; }
-.block.qw { width: 23%; }
 
 .txt-r { text-align: right; }
 .txt-l { text-align: left; }
@@ -276,6 +281,13 @@ form ul li.fw {
 .bg-light-gray { background-color: #eee; }
 .bg-green { background-color: #6DB809; }
 .bg-orange { background-color: #C55300; }
+
+.to-top { top: 0; }
+.to-rgt { right: 0; }
+.to-btm { bottom: 0; }
+.to-lft { left: 0; }
+
+.l20 { left: 20% }
 
 /* \ HELPER
  -----------------------------------------------------*/
@@ -350,6 +362,8 @@ header#page-header cite {
     padding: 14px 8px;
 }
 /* \ toolbar */
+
+
 
 /* messages */
 .msg {
@@ -1042,6 +1056,8 @@ header#page-header cite {
 /* Tables
  -------------------------------------------------------------------- */
 table {
+    border-bottom: solid 2px #ccc;
+    border-top: solid 2px #ccc;
 }
 table th,
 table td {
@@ -1052,7 +1068,6 @@ table thead tr {
 }
 table thead th {
     text-align: left;
-    border-bottom: solid 1px #ccc;
 }
 table tbody tr {
     -webkit-transition: .3s;
