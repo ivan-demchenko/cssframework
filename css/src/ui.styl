@@ -1,0 +1,82 @@
+multiprop(prop, arg)
+  -webkit-{prop} arg
+  -moz-{prop} arg
+  -o-{prop} arg
+  {prop} arg
+
+.toolbar 
+  padding 1%
+  float left
+  width 98%
+
+  .elem 
+    position relative
+    border-right solid 1px #aaa
+    padding 0 6px
+    margin 3px 0
+    min-height 50px
+
+    label 
+      position relative
+      display block
+
+    input,
+    select
+      font-size 12px
+      height 21px
+      padding 0
+    
+    select
+      width 90px
+    
+    input[type='text'],
+    input[type='search'],
+    input[type='range'],
+    input[type='email'],
+    input[type='tel'],
+    input[type='url']
+        width 90px
+
+    input[type='color'] 
+      width 43px
+
+    input[type='radio'],
+    input[type='checkbox'] 
+      height 22px
+      width auto
+      vertical-align middle
+
+    input[type='submit'],
+    input[type='reset'],
+    input[type='button'],
+    button,
+    .button
+      font-size 14px
+      height auto
+      width auto
+      padding 14px 8px
+
+  &last-child 
+    border none
+
+table 
+  border-bottom solid 2px #ccc
+  border-top solid 2px #ccc
+
+  th, td 
+    padding 4px
+
+  thead tr 
+    background #f0f0f0
+
+  thead th 
+    text-align left
+
+  tbody tr 
+    multiprop(transition, .3s)
+
+  &:nth-child(even) 
+    background #f7f7f7
+
+  &:hover 
+    background #fff7ec

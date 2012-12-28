@@ -1,0 +1,17 @@
+.toolbar{padding:1%;float:left;width:98%;}
+.toolbar .elem{position:relative;border-right:solid 1px #aaa;padding:0 6px;margin:3px 0;min-height:50px;}
+.toolbar .elem label{position:relative;display:block}
+.toolbar .elem input,.toolbar .elem select{font-size:12px;height:21px;padding:0}
+.toolbar .elem select{width:90px}
+.toolbar .elem input[type='text'],.toolbar .elem input[type='search'],.toolbar .elem input[type='range'],.toolbar .elem input[type='email'],.toolbar .elem input[type='tel'],.toolbar .elem input[type='url']{width:90px}
+.toolbar .elem input[type='color']{width:43px}
+.toolbar .elem input[type='radio'],.toolbar .elem input[type='checkbox']{height:22px;width:auto;vertical-align:middle}
+.toolbar .elem input[type='submit'],.toolbar .elem input[type='reset'],.toolbar .elem input[type='button'],.toolbar .elem button,.toolbar .elem .button{font-size:14px;height:auto;width:auto;padding:14px 8px}
+.toolbarlast-child{border:none}
+table{border-bottom:solid 2px #ccc;border-top:solid 2px #ccc;}
+table th,table td{padding:4px}
+table thead tr{background:#f0f0f0}
+table thead th{text-align:left}
+table tbody tr{-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s}
+table:nth-child(even){background:#f7f7f7}
+table:hover{background:#fff7ec}

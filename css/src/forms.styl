@@ -1,0 +1,167 @@
+multiprop(prop, arg)
+  -webkit-{prop} arg
+  -moz-{prop} arg
+  -o-{prop} arg
+  {prop} arg
+
+optgroup
+  font-style normal 
+
+fieldset
+  padding 0
+  border-bottom none
+  border-left none
+  border-right none
+  border-top dotted 1px #AAA
+
+legend
+  margin-left 0px
+  padding-right 5px
+
+keygen
+  width 220px
+  border solid 1px #ccc
+  background #fff
+  padding 4px
+
+input.loading
+  background-image url("../images/loader.gif")
+  background-position 100% 50%
+  background-repeat no-repeat
+
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='range'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='text'],
+select,
+textarea
+  border solid 1px #ccc
+  background-color #FFF
+  padding 4px
+  width 220px
+  multiprop(box-sizing, border-box)
+
+  &:focus
+    background-color #FCFAE1
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button,
+.button
+  background #888
+  border 1px solid #888
+  color #FFF
+  cursor pointer
+  padding 4px 6px
+  
+  &:hover
+    text-decoration none
+    background #888
+    color #f0f0f0
+  
+  &.big
+    font-size 18px
+    height 43px
+    line-height 26px
+    margin-bottom 0
+    padding 7px 10px 9px
+  
+  &.small
+    font-size 11px
+    padding 0 3px 1px
+
+input[type='submit']
+  background #6DB809
+  border solid 1px #6DB809
+
+input, button, textarea, select
+  multiprop(transition, .3s)
+
+form
+  input[type='submit'],
+  input[type='reset'],
+  input[type='radio'],
+  input[type='checkbox'],
+  input[type='button'] 
+    width auto
+
+  input.error 
+    color #f00
+    border solid 1px #f00
+    background #FDD8D8
+
+  dl
+    margin 1em 0 
+ 
+    dt 
+      clear left
+      float left
+      padding 0.5em 0.5em 0 0
+      width 140px
+
+    dd
+      margin 0 0 0.5em 150px 
+
+  ul 
+    width 100%
+    float left
+    padding 0
+
+    li 
+      display block
+      float left
+      min-height 50px
+      position relative
+      
+      input[type='color'],
+      input[type='date'],
+      input[type='datetime'],
+      input[type='datetime-local'],
+      input[type='email'],
+      input[type='month'],
+      input[type='number'],
+      input[type='range'],
+      input[type='search'],
+      input[type='tel'],
+      input[type='time'],
+      input[type='url'],
+      input[type='week'],
+      input[type='text'],
+      select, textarea
+        width 100%
+      
+      label 
+        display block
+      
+  input,select,textarea 
+    width 140px
+
+  ul.two-col
+    li
+      width 48%
+      padding 1%
+
+  ul.three-col
+    li
+      width 31.2%
+      padding 1%
+
+  ul.four-col
+    li
+      width 23%
+      padding 1%
+
+  ul
+    li.fw
+      width 98%

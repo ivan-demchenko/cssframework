@@ -1,0 +1,18 @@
+body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-height:20px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.txt-r{text-align:right}
+.txt-l{text-align:left}
+.txt-c{text-align:center}
+.fnt-b{font-weight:bold}
+.fnt-i{font-style:italic}
+.fnt-u{text-decoration:underline}
+.fnt-o{text-decoration:overline}
+.fnt-s{text-decoration:line-through}
+.bg-gray{background-color:#aaa}
+.bg-light-gray{background-color:#eee}
+.bg-green{background-color:#6db809}
+.bg-orange{background-color:#c55300}
+.to-top{top:0}
+.to-rgt{right:0}
+.to-btm{bottom:0}
+.to-lft{left:0}

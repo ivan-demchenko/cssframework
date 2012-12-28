@@ -1,0 +1,27 @@
+optgroup{font-style:normal}
+fieldset{padding:0;border-bottom:none;border-left:none;border-right:none;border-top:dotted 1px #aaa}
+legend{margin-left:0;padding-right:5px}
+keygen{width:220px;border:solid 1px #ccc;background:#fff;padding:4px}
+input.loading{background-image:url("../images/loader.gif");background-position:100% 50%;background-repeat:no-repeat}
+input[type='color'],input[type='date'],input[type='datetime'],input[type='datetime-local'],input[type='email'],input[type='month'],input[type='number'],input[type='range'],input[type='search'],input[type='tel'],input[type='time'],input[type='url'],input[type='week'],input[type='text'],select,textarea{border:solid 1px #ccc;background-color:#fff;padding:4px;width:220px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;}
+input[type='color']:focus,input[type='date']:focus,input[type='datetime']:focus,input[type='datetime-local']:focus,input[type='email']:focus,input[type='month']:focus,input[type='number']:focus,input[type='range']:focus,input[type='search']:focus,input[type='tel']:focus,input[type='time']:focus,input[type='url']:focus,input[type='week']:focus,input[type='text']:focus,select:focus,textarea:focus{background-color:#fcfae1}
+input[type='button'],input[type='submit'],input[type='reset'],button,.button{background:#888;border:1px solid #888;color:#fff;cursor:pointer;padding:4px 6px;}
+input[type='button']:hover,input[type='submit']:hover,input[type='reset']:hover,button:hover,.button:hover{text-decoration:none;background:#888;color:#f0f0f0}
+input[type='button'].big,input[type='submit'].big,input[type='reset'].big,button.big,.button.big{font-size:18px;height:43px;line-height:26px;margin-bottom:0;padding:7px 10px 9px}
+input[type='button'].small,input[type='submit'].small,input[type='reset'].small,button.small,.button.small{font-size:11px;padding:0 3px 1px}
+input[type='submit']{background:#6db809;border:solid 1px #6db809}
+input,button,textarea,select{-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s}
+form input[type='submit'],form input[type='reset'],form input[type='radio'],form input[type='checkbox'],form input[type='button']{width:auto}
+form input.error{color:#f00;border:solid 1px #f00;background:#fdd8d8}
+form dl{margin:1em 0;}
+form dl dt{clear:left;float:left;padding:.5em .5em 0 0;width:140px}
+form dl dd{margin:0 0 .5em 150px}
+form ul{width:100%;float:left;padding:0;}
+form ul li{display:block;float:left;min-height:50px;position:relative;}
+form ul li input[type='color'],form ul li input[type='date'],form ul li input[type='datetime'],form ul li input[type='datetime-local'],form ul li input[type='email'],form ul li input[type='month'],form ul li input[type='number'],form ul li input[type='range'],form ul li input[type='search'],form ul li input[type='tel'],form ul li input[type='time'],form ul li input[type='url'],form ul li input[type='week'],form ul li input[type='text'],form ul li select,form ul li textarea{width:100%}
+form ul li label{display:block}
+form input,form select,form textarea{width:140px}
+form ul.two-col li{width:48%;padding:1%}
+form ul.three-col li{width:31.2%;padding:1%}
+form ul.four-col li{width:23%;padding:1%}
+form ul li.fw{width:98%}
