@@ -16,3 +16,8 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-heigh
 .to-rgt{right:0}
 .to-btm{bottom:0}
 .to-lft{left:0}
+.msg{font-weight:bold;border-width:2px;padding:1%;width:98%;}
+.msg.red{background-color:#ffdfdf;color:#f00}
+.msg.green{background-color:#e2fabf;color:#008f0b}
+.msg.yellow{background-color:#fffcb5;color:#ffa500}
+.msg.blue{background-color:#dfedff;color:#0085ff}

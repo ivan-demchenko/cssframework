@@ -1,3 +1,10 @@
+multiprop(prop, arg)
+  -webkit-{prop} arg
+  -moz-{prop} arg
+  -ms-{prop} arg
+  -o-{prop} arg
+  {prop} arg
+
 h1,h2,h3,h4,h5,h6
   line-height: 1.5em
   margin: 0
@@ -57,10 +64,7 @@ h6
 a
   outline: none
   text-decoration: none
-  -webkit-transition: .3s
-  -moz-transition: .3s
-  -o-transition: .3s
-  transition: .3s
+  multiprop(transition, .3s)
   &:hover
     outline: none
     text-decoration: underline
