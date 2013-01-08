@@ -1,9 +1,4 @@
-multiprop(prop, arg)
-  -webkit-{prop} arg
-  -moz-{prop} arg
-  -ms-{prop} arg
-  -o-{prop} arg
-  {prop} arg
+@import "defaults"
 
 h1,h2,h3,h4,h5,h6
   line-height: 1.5em
@@ -32,7 +27,7 @@ h6
   border-bottom: dashed 1px #ccc
 
 :visited
-  color: #5a80a5
+  color: links_visited
   border: none
 
 [title]
@@ -64,19 +59,20 @@ h6
     margin-left: -10px
 
 a
-  outline: none
+  outline none
+  color links_default
   text-decoration: none
-  multiprop(transition, .3s)
+  multiprop(transition, animation_speed)
   &:hover
     outline: none
     text-decoration: underline
-    color: #0080ff
+    color: links_hover
 
 a[href^='http']
   text-decoration: none
   border-bottom: dotted 1px blue
   &:hover
-    border-bottom: dotted 1px #0080ff
+    border-bottom: dotted 1px links_hover
 
 p
   margin: 0 0 1em 0

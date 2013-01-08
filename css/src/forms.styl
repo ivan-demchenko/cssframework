@@ -1,9 +1,4 @@
-multiprop(prop, arg)
-  -webkit-{prop} arg
-  -moz-{prop} arg
-  -ms-{prop} arg
-  -o-{prop} arg
-  {prop} arg
+@import "defaults"
 
 optgroup
   font-style normal
@@ -13,7 +8,7 @@ fieldset
   border-bottom none
   border-left none
   border-right none
-  border-top dotted 1px #AAA
+  border-top dotted 1px color_gray
 
 legend
   margin-left 0px
@@ -21,8 +16,8 @@ legend
 
 keygen
   width 220px
-  border solid 1px #ccc
-  background #fff
+  border input_border
+  background color_input_normal
   padding 4px
 
 input.loading
@@ -46,23 +41,23 @@ input[type='week'],
 input[type='text'],
 textarea,
 select
-  border solid 1px #ccc
-  background-color #FFF
+  border input_border
+  background-color color_input_normal
   padding 4px
   width 220px
   multiprop(box-sizing, border-box)
 
   &:focus
-    background-color #FCFAE1
+    background-color color_input_focused
 
 input[type='button'],
 input[type='submit'],
 input[type='reset'],
 .button,
 button
-  background #888
+  background color_button_default
   border none
-  color #FFF
+  color color_button_default_font_color
   cursor pointer
   display inline-block
   line-height 20px
@@ -82,17 +77,18 @@ button
 
   &:hover
     text-decoration none
-    background #888
-    color #f0f0f0
+    background color_button_hovered
+    color color_button_hovered_font_color
 
 .button:visited
-  color #fff
+  color color_button_default_font_color
 
 input[type='submit']
-  background #6DB809
+  background color_button_submit
+  color color_button_submit_font_color
 
 input, button, textarea, select, .button
-  multiprop(transition, .3s)
+  multiprop(transition, animation_speed)
 
 form
   input[type='submit'],
@@ -103,9 +99,9 @@ form
     width auto
 
   input.error
-    color #f00
-    border solid 1px #f00
-    background #FDD8D8
+    color color_red
+    border solid 1px color_red
+    background color_input_error
 
   dl
     margin 1em 0

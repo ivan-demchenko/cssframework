@@ -1,4 +1,4 @@
-body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-height:20px}
+body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5em}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 @font-face{font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot");src:url("../fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/fontawesome-webfont.woff") format('woff'),url("../fonts/fontawesome-webfont.ttf") format('truetype'),url("../fonts/fontawesome-webfont.svg#FontAwesome") format('svg');font-weight:normal;font-style:normal}
 .txt-r{text-align:right}
@@ -10,15 +10,14 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-heigh
 .fnt-u{text-decoration:underline}
 .fnt-o{text-decoration:overline}
 .fnt-s{text-decoration:line-through}
-.bg-gray{background-color:#aaa}
-.bg-light-gray{background-color:#eee}
-.bg-green{background-color:#6db809}
-.bg-orange{background-color:#c55300}
+.bg-gray{background-color:#838383}
+.bg-light-gray{background-color:#f6f6f6}
+.bg-green{background-color:#6ab200}
 .msg{font-weight:bold;border-width:2px;padding:1%;width:98%;}
-.msg.red{background-color:#ffdfdf;color:#f00}
-.msg.green{background-color:#e2fabf;color:#008f0b}
-.msg.yellow{background-color:#fffcb5;color:#ffa500}
-.msg.blue{background-color:#dfedff;color:#0085ff}
+.msg.red{background-color:#ffe7e5;color:#ff0d00}
+.msg.green{background-color:#d6ff99;color:#6ab200}
+.msg.yellow{background-color:#fffadf;color:#f9ce00}
+.msg.blue{background-color:#9cd0f8;color:#0b61a4}
 [class^="icon-"]:before,[class*=" icon-"]:before{padding-right:5px;line-height:0;font-family:FontAwesome}
 .icon-black:before{color:#000}
 .icon-glass:before{content:"\f000"}

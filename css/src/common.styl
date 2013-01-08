@@ -1,7 +1,9 @@
+@import "defaults"
+
 body
-  font-family "Segoe UI", Arial, Helvetica, sans-serif
-  font-size 14px
-  line-height 20px
+  font-family fonts
+  font-size fontsize
+  line-height lineheight
 
 .clearfix:after
   content "."
@@ -50,16 +52,13 @@ body
 
 /* >> Coloring */
 .bg-gray
-  background-color #aaa
+  background-color color_gray
 
 .bg-light-gray
-  background-color #eee
+  background-color lighten(color_gray, color_very_light)
 
 .bg-green
-  background-color #6DB809
-
-.bg-orange
-  background-color #C55300
+  background-color color_green
 /* << Coloring */
 
 .msg
@@ -69,20 +68,20 @@ body
   width 98%
 
   &.red
-    background-color #FFDFDF
-    color red
+    background-color lighten(color_red, color_very_light)
+    color color_red
 
   &.green
-    background-color #E2FABF
-    color #008F0B
+    background-color lighten(color_green, color_very_light)
+    color color_green
 
   &.yellow
-    background-color #FFFCB5
-    color orange
+    background-color lighten(color_yellow, color_very_light)
+    color color_yellow
 
   &.blue
-    background-color #DFEDFF
-    color #0085FF
+    background-color lighten(color_blue, color_very_light)
+    color color_blue
     
 /* >> Buttons */
 [class^="icon-"]:before,
