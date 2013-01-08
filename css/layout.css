@@ -2,6 +2,7 @@
 .clr{clear:both;float:none}
 .di{display:inline-block}
 .db{display:block}
+.dtc{display:table-cell}
 .pc{margin:0 auto}
 .w10{width:10%}
 .w20{width:20%}
@@ -48,6 +49,10 @@
 .pf{position:fixed}
 .pa{position:absolute}
 .pr{position:relative}
+.to-top{top:0}
+.to-rgt{right:0}
+.to-btm{bottom:0}
+.to-lft{left:0}
 .mo1{margin:1%}
 .mt1{margin-top:1%}
 .mb1{margin-bottom:1%}

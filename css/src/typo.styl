@@ -37,6 +37,7 @@ h6
 
 [title]
   position: relative
+  
   &:hover:after
     position: absolute
     background: rgba(0, 0, 0, .8)
@@ -49,6 +50,7 @@ h6
     left: 0
     line-height: 1
     width: 140px
+
   &:hover:before
     position: absolute
     width: 0
@@ -84,3 +86,11 @@ ul
 
 li
   list-style: circle
+
+.cols-txt-two
+  multiprop(column-count, 2)
+  multiprop(column-gap, 1em)
+
+.cols-txt-three
+  multiprop(column-count, 3)
+  multiprop(column-gap, 1em)
