@@ -1,0 +1,39 @@
+/* Width screen 1200px -> ... 
+@media only screen and (min-width: 1200px)
+
+
+/* Width between 1000px <-> 1199px 
+@media only screen and (min-width: 1000px) and (max-width: 1199px)
+
+
+/* width between 800px <-> 979px */
+@media only screen and (min-width: 780px) and (max-width: 979px)
+  form
+    ul.four-col, ul.three-col
+      li
+        width: 48%
+
+@media only screen and (max-width: 799px)
+  for num in 10 20 30 40 50 60 70 80 90 100
+    {'.w'+num}
+      width auto
+    
+  form
+    ul.four-col, ul.three-col
+      li
+        width: 48%
+
+
+@media only screen and (max-width: 480px)
+  form
+    dl
+      dt
+        clear both
+        width 100%
+        text-align left
+      dd
+        margin 0
+
+    ul.four-col, ul.three-col
+      li
+        width: 98%
