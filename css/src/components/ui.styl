@@ -9,31 +9,28 @@
     position relative
     border-right solid 1px lighten(color_gray, color_lighter)
     padding 0 6px
-    margin 3px 0
-    min-height 47px
+    min-height 40px
 
     label 
       position relative
       display block
+      font-size 13px
+      line-height 14px
 
     input,select
       font-size 12px
       height 20px
       padding 0
+      line-height 1
+      width 90px
     
     select
       width 90px
-
-    input[type='text'],
-    input[type='search'],
-    input[type='range'],
-    input[type='email'],
-    input[type='tel'],
-    input[type='url']
-        width 90px
-
-    input[type='color'] 
-      width 43px
+    
+    input[type='datetime'],
+    input[type='datetime-local'],
+    input[type='date']
+      width 170px
 
     input[type='radio'],
     input[type='checkbox'] 
@@ -45,32 +42,32 @@
     input[type='reset'],
     input[type='button'],
     button, .button
-      margin 1px
+      margin 0
       padding 1px 6px 2px
       line-height 17px
-      font-size 12px
+      font-size 13px
 
   &:last-child 
     border none
 
-table 
+table
   border-bottom solid 2px lighten(color_gray, color_lighter)
   border-top solid 2px lighten(color_gray, color_lighter)
 
-  th, td 
+  th, td
     padding 4px
 
-  thead tr 
+  thead tr
     background lighten(color_gray, color_lighter)
 
-  thead th 
+  thead th
     text-align left
 
-  tbody tr 
+  tbody tr
     multiprop(transition, animation_speed)
 
-    &:nth-child(even) 
+    &:nth-child(even)
       background lighten(color_gray, color_very_light)
 
-    &:hover 
+    &:hover
       background lighten(color_yellow, color_very_light)

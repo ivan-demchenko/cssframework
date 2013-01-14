@@ -43,10 +43,12 @@ textarea,
 select
   border input_border
   background-color color_input_normal
-  padding 4px
+  padding 0
   width 220px
-  height 30px
-  vertical-align middle
+  height 26px
+  display inline-block
+  font-size fontsize
+  line-height lineheight
   multiprop(box-sizing, border-box)
 
   &:focus
@@ -65,21 +67,20 @@ button
   color color_button_default_font_color
   cursor pointer
   display inline-block
-  line-height 15px
+  line-height lineheight
+  font-size fontsize
   outline none
-  padding 8px 7px 7px
+  padding 3px 7px
   overflow visible
-  vertical-align middle
   width auto
 
   &.big
     padding 12px 15px
-    font-size 19px
+    font-size fontsize + 5px
 
   &.small
     padding 0px 4px
-    font-size 11px
-    line-height 16px
+    font-size fontsize - 5px
 
   &:hover
     text-decoration none
@@ -115,7 +116,7 @@ form
     dt
       clear left
       float left
-      padding 0.3em 0.3em 0 0
+      padding 0
       width 140px
 
     dd
