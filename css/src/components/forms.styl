@@ -45,10 +45,15 @@ select
   background-color color_input_normal
   padding 4px
   width 220px
+  height 30px
+  vertical-align middle
   multiprop(box-sizing, border-box)
 
   &:focus
     background-color color_input_focused
+
+textarea
+  height 70px
 
 input[type='button'],
 input[type='submit'],
@@ -60,20 +65,21 @@ button
   color color_button_default_font_color
   cursor pointer
   display inline-block
-  line-height 20px
+  line-height 15px
   outline none
-  padding 5px 8px
+  padding 8px 7px 7px
   overflow visible
+  vertical-align middle
   width auto
 
   &.big
-    padding 11px 15px 14px
+    padding 12px 15px
     font-size 19px
 
   &.small
     padding 0px 4px
     font-size 11px
-    height 18px
+    line-height 16px
 
   &:hover
     text-decoration none
