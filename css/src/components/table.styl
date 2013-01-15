@@ -15,9 +15,10 @@ table
 
   tbody tr
     multiprop(transition, animation_speed)
-
+    
+    &:hover
+        background lighten(color_yellow, color_very_light)
+  
+  &.zebra tbody tr
     &:nth-child(even)
       background lighten(color_gray, color_very_light)
-
-    &:hover
-      background lighten(color_yellow, color_very_light)

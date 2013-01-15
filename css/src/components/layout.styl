@@ -7,16 +7,12 @@
   clear both
   float none
 
-.di
+.disp-ib
   display inline-block
-.db
+.disp-b
   display block
-
-.dtc
+.disp-tc
   display table-cell
-
-.pc
-  margin 0 auto
 
 /* >> widths */
 for num in 10 20 30 40 50 60 70 80 90 100
@@ -39,17 +35,19 @@ for num in 10 20 30 40 50 60 70 80 90 100
 /* << offsets*/
 
 /* >> positionign */
-.fl
+.flt-l
   float left
-.fr
+.flt-r
   float right
-.pf
+.pos-f
   position fixed
-.pa
+.pos-a
   position absolute
-.pr
+.pos-r
   position relative
-
+.pos-c
+  margin 0 auto
+  
 .to-top
   top 0
 
@@ -90,12 +88,12 @@ for num in 10 20 30 40 50 60 70 80 90 100
 /* << paddings*/
 
 /* >> bordering */
-.bt1
+.brd-t1
   border-top solid 1px lighten(color_gray, color_lighter)
-.bb1
+.brd-b1
   border-bottom solid 1px lighten(color_gray, color_lighter)
-.bl1
+.brd-l1
   border-left solid 1px lighten(color_gray, color_lighter)
-.br1
+.brd-r1
   border-right solid 1px lighten(color_gray, color_lighter)
 /* << bordering*/

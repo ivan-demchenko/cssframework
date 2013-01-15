@@ -3,6 +3,10 @@
 optgroup
   font-style normal
 
+option:hover
+  multiprop(transition, animation_speed)
+  background-color lighten(color_gray, color_lighter)
+
 fieldset
   padding 0
   border-bottom none
@@ -25,6 +29,9 @@ input.loading
   background-position 100% 50%
   background-repeat no-repeat
 
+input, textarea, select
+  multiprop(border-radius, 3px)
+    
 input[type='color'],
 input[type='date'],
 input[type='datetime'],
@@ -53,46 +60,10 @@ select
 
   &:focus
     background-color color_input_focused
+    border-color color_input_border_focused
 
 textarea
   height 70px
-
-input[type='button'],
-input[type='submit'],
-input[type='reset'],
-.button,
-button
-  background color_button_default
-  border none
-  color color_button_default_font_color
-  cursor pointer
-  display inline-block
-  line-height lineheight
-  font-size fontsize
-  outline none
-  padding 3px 7px
-  overflow visible
-  width auto
-
-  &.big
-    padding 12px 15px
-    font-size fontsize + 5px
-
-  &.small
-    padding 0px 4px
-    font-size fontsize - 5px
-
-  &:hover
-    text-decoration none
-    background color_button_hovered
-    color color_button_hovered_font_color
-
-.button:visited
-  color color_button_default_font_color
-
-input[type='submit']
-  background color_button_submit
-  color color_button_submit_font_color
 
 input, button, textarea, select, .button
   multiprop(transition, animation_speed)

@@ -2,8 +2,8 @@
 
 body
   font-family fonts
-  font-size fontsize
-  line-height lineheight
+  font-size 100%
+  line-height 1.125em
 
 .clearfix:after
   content "."
@@ -19,16 +19,19 @@ body
   font-weight normal
   font-style normal
 
+.big-header
+  clear: both;
+  float: left;
+  padding: 1%;
+  width: 98%;
+
 /* >> Text Positioning */
 .txt-r
   text-align right
-
 .txt-l
   text-align left
-
 .txt-c
   text-align center
-  
 .txt-j
   text-align justify
 /* << Text Positioning */
@@ -36,16 +39,12 @@ body
 /* >> Font Styling */
 .fnt-b
   font-weight bold
-
 .fnt-i
   font-style italic
-
 .fnt-u
   text-decoration underline
-
 .fnt-o
   text-decoration overline
-
 .fnt-s
   text-decoration line-through
 /* << Font Styling */
@@ -53,10 +52,8 @@ body
 /* >> Coloring */
 .bg-gray
   background-color color_gray
-
 .bg-light-gray
   background-color lighten(color_gray, color_very_light)
-
 .bg-green
   background-color color_green
 /* << Coloring */
@@ -87,7 +84,7 @@ body
 [class^="icon-"]:before,
 [class*=" icon-"]:before
   padding-right 5px
-  line-height 17px
+  line-height normal
   display inline-block
   font-family FontAwesome
 
