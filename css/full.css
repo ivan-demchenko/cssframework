@@ -386,11 +386,11 @@ li{list-style:circle}
 .toolbar{padding:1%;float:left;width:98%;}
 .toolbar .elem{position:relative;border-right:solid 1px #d0d0d0;padding:0 6px;min-height:40px;}
 .toolbar .elem label{position:relative;display:block;font-size:13px;line-height:14px}
-.toolbar .elem input,.toolbar .elem select{font-size:12px;height:20px;padding:0;line-height:1;width:90px}
+.toolbar .elem input,.toolbar .elem select,.toolbar .elem .button{font-size:12px;width:90px;height:20px;padding:0;line-height:20px}
+.toolbar .elem .button{text-align:center}
 .toolbar .elem select{width:90px}
 .toolbar .elem input[type='datetime'],.toolbar .elem input[type='datetime-local'],.toolbar .elem input[type='date']{width:170px}
 .toolbar .elem input[type='radio'],.toolbar .elem input[type='checkbox']{height:22px;width:auto;vertical-align:middle}
-.toolbar .elem input[type='submit'],.toolbar .elem input[type='reset'],.toolbar .elem input[type='button'],.toolbar .elem button,.toolbar .elem .button{margin:0;padding:1px 6px 2px;line-height:17px;font-size:13px}
 .toolbar:last-child{border:none}
 table{border-bottom:solid 2px #d0d0d0;border-top:solid 2px #d0d0d0;}
 table th,table td{padding:4px}

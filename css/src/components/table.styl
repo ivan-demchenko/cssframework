@@ -1,0 +1,23 @@
+@import "../defaults"
+
+table
+  border-bottom solid 2px lighten(color_gray, color_lighter)
+  border-top solid 2px lighten(color_gray, color_lighter)
+
+  th, td
+    padding 4px
+
+  thead tr
+    background lighten(color_gray, color_lighter)
+
+  thead th
+    text-align left
+
+  tbody tr
+    multiprop(transition, animation_speed)
+
+    &:nth-child(even)
+      background lighten(color_gray, color_very_light)
+
+    &:hover
+      background lighten(color_yellow, color_very_light)

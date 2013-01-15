@@ -1,0 +1,45 @@
+@import "../defaults"
+
+.toolbar 
+  padding 1%
+  float left
+  width 98%
+
+  .elem 
+    position relative
+    border-right solid 1px lighten(color_gray, color_lighter)
+    padding 0 6px
+    min-height 40px
+
+    label 
+      position relative
+      display block
+      font-size 13px
+      line-height 14px
+
+    input,select,.button
+      font-size 12px
+      width 90px
+      height 20px
+      padding 0
+      line-height 20px
+
+    .button
+      text-align center
+
+    select
+      width 90px
+
+    input[type='datetime'],
+    input[type='datetime-local'],
+    input[type='date']
+      width 170px
+
+    input[type='radio'],
+    input[type='checkbox'] 
+      height 22px
+      width auto
+      vertical-align middle
+
+  &:last-child 
+    border none
