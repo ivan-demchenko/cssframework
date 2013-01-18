@@ -5,18 +5,38 @@ multiprop(prop, arg)
   -o-{prop} arg
   {prop} arg
   
-animation_speed = .3s
+hor_gradient(from, to)
+  background from
+  background linear-gradient(to bottom,  from 0%,to 100%)
+  background -webkit-linear-gradient(top,  from 0%,to 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,from), color-stop(100%,to))
+  background -moz-linear-gradient(top,  from 0%, to 100%)
+  background -ms-linear-gradient(top,  from 0%,to 100%)
+  background -o-linear-gradient(top,  from 0%,to 100%)
+  
+ver_gradient(from, to)
+  background: from;
+  background: -moz-linear-gradient(top,  from 0%, to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,from), color-stop(100%,to));
+  background: -webkit-linear-gradient(top,  from 0%,to 100%);
+  background: -o-linear-gradient(top,  from 0%,to 100%);
+  background: -ms-linear-gradient(top,  from 0%,to 100%);
+  background: linear-gradient(to bottom,  from 0%,to 100%);
+  
+animation_speed = .2s
   
 fonts = "Segoe UI", Arial, Helvetica, sans-serif
 fontsize = 14px
+lineheight = 20px
 
-lineheight = fontsize * 1.5
+form_elem_padding = 3px
 
 links_default = #0B61A4
 links_hover = #0080ff
 links_visited = #5a80a5
 
 input_border = solid 1px #ccc
+button_border = solid 1px #888
 
 color_lighter = 30
 color_very_light = 45

@@ -6,35 +6,27 @@ input[type='reset'],
 .button,
 button
   background color_button_default
-  border none
+  border button_border
   color color_button_default_font_color
   display inline-block
-  line-height 24px
+  line-height lineheight
   outline none
-  padding 1px 9px
+  padding form_elem_padding 7px
   overflow visible
   width auto
-  multiprop(border-radius, 3px)
-  multiprop(transition, animation_speed)
-
+  &:hover
+    text-decoration none
+    color color_button_hovered_font_color
   &.big
     padding 12px 15px
-    font-size fontsize + 5px
-    line-height 26px
-
+    font-size fontsize + 4px
   &.small
     padding 0px 4px
     font-size fontsize - 3px
-    height 16px
-    line-height 17px
-
-  &:hover
-    text-decoration none
-    background color_button_hovered
-    color color_button_hovered_font_color
 
 .button:visited
   color color_button_default_font_color
+  border button_border
 
 input[type='submit']
   background color_button_submit

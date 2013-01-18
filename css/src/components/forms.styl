@@ -29,9 +29,6 @@ input.loading
   background-position 100% 50%
   background-repeat no-repeat
 
-input, textarea, select
-  multiprop(border-radius, 3px)
-    
 input[type='color'],
 input[type='date'],
 input[type='datetime'],
@@ -50,17 +47,22 @@ textarea,
 select
   border input_border
   background-color color_input_normal
-  padding 0
+  padding form_elem_padding
   width 220px
-  height 26px
   display inline-block
-  font-size fontsize
   line-height lineheight
   multiprop(box-sizing, border-box)
 
   &:focus
     background-color color_input_focused
     border-color color_input_border_focused
+
+input[type='time'],
+input[type='number'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local']
+  text-align right
 
 textarea
   height 70px

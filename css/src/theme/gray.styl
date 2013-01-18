@@ -1,0 +1,56 @@
+@import "../defaults"
+
+.toolbar
+  ver_gradient(#f8f8f8, #e5e5e5)
+  
+  input[type='text'],
+  input[type='search'],
+  input[type='color'],
+  input[type='date'],
+  input[type='datetime'],
+  input[type='datetime-local'],
+  input[type='email'],
+  input[type='month'],
+  input[type='number'],
+  input[type='range'],
+  input[type='tel'],
+  input[type='time'],
+  input[type='url'],
+  input[type='week'],
+  input[type='text'],
+  select
+    background transparent
+    border-top none
+    border-left none
+    border-right none
+    border-bottom solid 1px #ccc
+    &:hover
+      border solid 1px #ccc
+    &:focus
+      background #fff
+  select[size]:hover
+    background #fff
+
+.button,button,input[type='button'],input[type='reset']
+  &:hover
+    background #999
+  &:active
+    background #777
+    color #eee
+    multiprop(text-shadow, none)
+    multiprop(box-shadow, inset 0px 0px 6px #555)
+
+input[type='submit']
+  &:hover
+    background #7ed200
+  &:active
+    background #62a400
+    color #ddffaa
+    multiprop(text-shadow, none)
+    multiprop(box-shadow, inset 0px 0px 6px #426f00)
+    
+nav
+  font-size 12px
+  font-weight bold
+  a
+    padding 5px

@@ -9,7 +9,7 @@
     position relative
     border-right solid 1px lighten(color_gray, color_lighter)
     padding 0 6px
-    min-height 40px
+    min-height 42px
 
     label 
       position relative
@@ -17,26 +17,27 @@
       font-size 13px
       line-height 14px
 
-    input,select,.button
+    input,select,.button,button
       font-size 12px
       width 90px
-      height 20px
       padding 0
-      line-height 20px
-
+      line-height 17px
     .button
       text-align center
+    .button:visited
+      border button_border
     
     select[size]
       font-size 11px
-
-    select[size]:hover
-      multiprop(box-shadow, 0 0 10px #555555)
-      clear both
-      height 100px
-      margin-top -73px
-      position relative
-      z-index 2
+      height 19px
+      &:hover
+        multiprop(box-shadow, 0 0 10px #777)
+        border none
+        clear both
+        height 100px
+        margin-top -74px
+        position relative
+        z-index 2
 
     select
       width 90px
