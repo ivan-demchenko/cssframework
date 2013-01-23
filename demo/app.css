@@ -16,10 +16,20 @@
   width: 250px;
 }
 #app-header nav a {
-  padding: 5px;
+  padding: 0 5px;
   color: #fff;
 }
 #app-header nav a:hover {
   background: #0B61A4;
   color: #9CD0F8;
+}
+
+#app-body {
+  background: #f0f0f0;
+  top: 76px;
+  bottom: 46px;
+}
+
+#app-login {
+  top: 50%;
 }
