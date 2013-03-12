@@ -273,7 +273,7 @@ body{font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:14px;line-heigh
 .popup article{overflow:auto;position:relative;max-height:450px}
 label{display:inline-block;padding:3px 0}
 optgroup{font-style:normal}
-option:hover{-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;transition:.2s;background-color:#d0d0d0}
+option:hover{background-color:#d0d0d0}
 fieldset{padding:0;border-bottom:none;border-left:none;border-right:none;border-top:dotted 1px #838383}
 legend{margin-left:0;padding-right:5px;font-size:17px}
 keygen{width:220px;border:solid 1px #ccc;background:#fff;padding:4px}
@@ -354,6 +354,7 @@ input[type='submit']{background:#6ab200;color:#fff}
 .pos-a{position:absolute}
 .pos-r{position:relative}
 .pos-c{margin:0 auto}
+.pos-a.pos-c{left:50%;margin-left:-50%}
 .to-top{top:0}
 .to-rgt{right:0}
 .to-btm{bottom:0}
@@ -412,13 +413,12 @@ table col:hover{background:#d0d0d0}
 table th,table td{padding:4px}
 table thead tr{background:#d0d0d0}
 table thead th{text-align:left}
-table tbody tr{-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;transition:.2s;}
 table tbody tr:hover{background:#fffadf}
 table.zebra tbody tr:nth-child(even){background:#f6f6f6;}
 table.zebra tbody tr:nth-child(even):hover{background:#fffadf}
 nav.hor a{display:block;text-decoration:none}
 nav.hor ul{display:table;float:left;width:100%;table-layout:fixed;padding:0;margin:0;}
-nav.hor ul li{position:relative;display:table-cell;width:100%;-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;transition:.2s;}
+nav.hor ul li{position:relative;display:table-cell;width:100%;}
 nav.hor ul li:hover{background:#f6f6f6;}
 nav.hor ul li:hover ul{display:table-cell;height:auto;}
 nav.hor ul li:hover ul li ul{display:none}

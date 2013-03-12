@@ -1,0 +1,19 @@
+#flex-wrapp {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 500px;
+  padding: 10px;
+  justify-content: space-around;
+}
+#flex-wrapp background #eee {
+  -webkit-justify-content: space-around;
+}
+.flex-item {
+  margin: 5px;
+  height: 500px;
+  width: 90px;
+  background: DeepSkyBlue;
+}

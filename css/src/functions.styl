@@ -1,0 +1,71 @@
+multiprop(prop, arg)
+  -webkit-{prop} arg
+  -moz-{prop} arg
+  -ms-{prop} arg
+  -o-{prop} arg
+  {prop} arg
+
+/* FLEXBOX
+ ---------------------------------------------------------------------------- */
+flexbox()
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  
+flex_direction(val)
+  -webkit-flex-direction val
+  -moz-flex-direction val
+  -ms-flex-direction val
+  -o-flex-direction val
+
+flex_flow(val)
+  -webkit-flex-flow val
+  -moz-flex-flow val
+  -ms-flex-flow val
+  -o-flex-flow val
+
+flex_order(val)
+  -webkit-flex-order val
+  -moz-flex-order val
+  -ms-flex-order val
+  -o-flex-order val
+
+flexbox_width(val)
+  width -webkit-flex(val)
+  width -moz-flex(val)
+  width -ms-flex(val)
+  width -o-flex(val)
+
+flexbox_pack(val)
+  -webkit-flex-pack val
+  -moz-flex-pack val
+  -ms-flex-pack val
+  -o-flex-pack val
+
+flexbox_align(val)
+  -webkit-flex-align val
+  -moz-flex-align val
+  -ms-flex-align val
+  -o-flex-align val
+
+/* GRADIENTS
+ ---------------------------------------------------------------------------- */
+hor_gradient(from, to)
+  background from
+  background linear-gradient(to bottom,  from 0%,to 100%)
+  background -webkit-linear-gradient(top,  from 0%,to 100%)
+  background -webkit-gradient(linear, left top, left bottom, color-stop(0%,from), color-stop(100%,to))
+  background -moz-linear-gradient(top,  from 0%, to 100%)
+  background -ms-linear-gradient(top,  from 0%,to 100%)
+  background -o-linear-gradient(top,  from 0%,to 100%)
+
+ver_gradient(from, to)
+  background: from;
+  background: -moz-linear-gradient(top,  from 0%, to 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,from), color-stop(100%,to));
+  background: -webkit-linear-gradient(top,  from 0%,to 100%);
+  background: -o-linear-gradient(top,  from 0%,to 100%);
+  background: -ms-linear-gradient(top,  from 0%,to 100%);
+  background: linear-gradient(to bottom,  from 0%,to 100%);
