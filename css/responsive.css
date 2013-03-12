@@ -1,0 +1,65 @@
+/* Width screen 1200px -> ... 
+@media only screen and (min-width: 1200px)
+
+
+/* Width between 1000px <-> 1199px 
+@media only screen and (min-width: 1000px) and (max-width: 1199px)
+
+
+/* width between 800px <-> 979px */
+@media only screen and (min-width: 780px) and (max-width: 979px) {
+  form ul.four-col li,
+  form ul.three-col li {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .w10 {
+    width: auto;
+  }
+  .w20 {
+    width: auto;
+  }
+  .w30 {
+    width: auto;
+  }
+  .w40 {
+    width: auto;
+  }
+  .w50 {
+    width: auto;
+  }
+  .w60 {
+    width: auto;
+  }
+  .w70 {
+    width: auto;
+  }
+  .w80 {
+    width: auto;
+  }
+  .w90 {
+    width: auto;
+  }
+  .w100 {
+    width: auto;
+  }
+  form ul.four-col li,
+  form ul.three-col li {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  form dl dt {
+    clear: both;
+    width: 100%;
+    text-align: left;
+  }
+  form dl dd {
+    margin: 0;
+  }
+  form ul.four-col li,
+  form ul.three-col li {
+    width: 98%;
+  }
+}
