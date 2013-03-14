@@ -1,10 +1,14 @@
 @import "../defaults"
 @import "../functions"
+@import "common"
 
-.toolbar 
-  padding 1%
-  float left
-  width 98%
+.toolbar
+  background #f0f0f0
+  @extend .group
+  
+  .brand
+    cursor default
+    text_vertical_rythm(1.5em, 1.9048em, 0.9524em, 0)
 
   .elem 
     position relative

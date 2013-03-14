@@ -1,9 +1,18 @@
 @import "../defaults"
+html
+  font-size 87.5%
 
 body
   font-family fonts
   font-size fontsize
   line-height lineheight
+
+@font-face
+  font-family 'FontAwesome'
+  src url('../fonts/fontawesome-webfont.eot')
+  src url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg')
+  font-weight normal
+  font-style normal
 
 .clearfix:after
   content "."
@@ -13,27 +22,17 @@ body
   visibility hidden
 
 .group
-  *zoom 1
+  zoom 1
   &:before,
   &:after
     content ""
     display table
-
   &:after
     clear both
-
-@font-face
-  font-family 'FontAwesome'
-  src url('../fonts/fontawesome-webfont.eot')
-  src url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff') format('woff'),url('../fonts/fontawesome-webfont.ttf') format('truetype'),url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg')
-  font-weight normal
-  font-style normal
-
-.big-header
-  clear: both;
-  float: left;
-  padding: 1%;
-  width: 98%;
+  
+hr
+  border none
+  border-bottom solid 1px #aaa
 
 /* >> Text Positioning */
 .txt-r
@@ -68,27 +67,11 @@ body
   background-color color_green
 /* << Coloring */
 
-.msg
-  font-weight bold
-  border-width 2px
-  padding 1%
-  width 98%
-
-  &.red
-    background-color lighten(color_red, color_very_light)
-    color color_red
-
-  &.green
-    background-color lighten(color_green, color_very_light)
-    color color_green
-
-  &.yellow
-    background-color lighten(color_yellow, color_very_light)
-    color color_yellow
-
-  &.blue
-    background-color lighten(color_blue, color_very_light)
-    color color_blue
+.big-header
+  @extend .group
+  clear: both;
+  padding: 1%;
+  width: 98%;
     
 /* >> Buttons */
 [class^="icon-"]:before,

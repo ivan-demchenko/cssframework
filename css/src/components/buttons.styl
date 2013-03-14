@@ -8,11 +8,12 @@ button
   background color_button_default
   border button_border
   color color_button_default_font_color
-  display inline-block
+  vertical-align middle
   font-size fontsize
   line-height lineheight
   outline none
-  padding form_elem_padding 7px
+  display inline-block
+  padding form_elem_padding
   overflow visible
   width auto
   cursor pointer
@@ -20,11 +21,11 @@ button
     text-decoration none
     color color_button_hovered_font_color
   &.big
-    padding 12px 15px
+    padding (form_elem_padding + 6) (form_elem_padding + 10)
     font-size fontsize + 4px
   &.small
-    padding 0px 4px
-    font-size fontsize - 3px
+    padding (form_elem_padding - 3) (form_elem_padding)
+    font-size fontsize - 4px
 
 .button:visited
   color color_button_default_font_color
