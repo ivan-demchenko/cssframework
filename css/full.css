@@ -186,9 +186,9 @@ nav.hor ul li ul li ul{background:#e9e9e9;left:100%;top:0;display:none;z-index:2
 .msg.green{background-color:#d6ff99;color:#6ab200}
 .msg.yellow{background-color:#fffadf;color:#f9ce00}
 .msg.blue{background-color:#9cd0f8;color:#0b61a4}
-header#app #logo{font-size:1.5em;line-height:1.9048em;margin-top:0;margin-bottom:0}
+header#app #logo{padding:0 1em;display:inline-block;font-size:1.5em;line-height:1.9048em;margin-top:0;margin-bottom:0}
 header#app nav{float:left;}
-header#app nav a{padding:10px}
+header#app nav a{display:inline-block;padding:10px}
 @media only screen and (min-width: 780px) and (max-width: 979px){form ul.four-col li,form ul.three-col li{width:48%}
 }@media only screen and (max-width: 799px){.w10{width:auto}
 .w20{width:auto}
