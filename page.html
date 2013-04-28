@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <title>Demo App</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi">
+        
         <link rel="stylesheet" type="text/css" href="css/full.css">
-
         <link rel="stylesheet" type="text/css" href="demo/page.css">
     </head>
     <body>
-        <header id="main" class="pf w100">
-            <div class="w20 fl">
+        <header id="main" class="pos-f w100">
+            <div class="w20 flt-l">
                 <h1>Mail</h1>
             </div>
-            <div class="fr w80" id="search-box">
+            <div class="flt-r w80" id="search-box">
                 <input type="search" name="some_name" value="" id="some_name">
                 <button>Search</button>
             </div>
         </header>
-            <aside id="folders" class="bdy w20 fl pf scrl">
+            <aside id="folders" class="bdy w20 flt-l pos-f scrl">
                 <ul>
                     <li>
                         <a href="/">Abca</a>
@@ -77,7 +79,7 @@
                     <li><a href="/">Abca</a></li>
                 </ul>
             </aside>
-            <section id="body" class="bdy ol20 w60 pf scrl">
+            <section id="body" class="bdy ol20 w60 pos-f scrl">
                 <div class="po1 email-item">
                     <h4>New email</h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectus turpis
@@ -117,15 +119,15 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectus turpis
                 </div>
             </section>
-            <aside id="chat" class="bdy w20 pf scrl to-rgt">
+            <aside id="chat" class="bdy w20 pos-f scrl to-rgt">
                 <h3>Chat</h3>
-                <div class="pf chat-input">
+                <div class="pos-f chat-input">
                     <form>
                         <input type="text" name="msg"><button>Send</button>
                     </form>
                 </div>
             </aside>
-        <footer class="pf w100 to-btm" id="status-bar">
+        <footer class="pos-f w100 to-btm" id="status-bar">
             Status
         </footer>
     </body>
