@@ -1,4 +1,9 @@
 @import "../defaults"
+@import "../functions"
+
+*
+  multiprop(box-sizing, border-box)
+
 html
   font-size 87.5%
 
@@ -6,6 +11,8 @@ body
   font-family fonts
   font-size fontsize
   line-height lineheight
+  margin 0
+  padding 0
 
 @font-face
   font-family 'FontAwesome'
@@ -29,7 +36,7 @@ body
     display table
   &:after
     clear both
-  
+
 hr
   border none
   border-bottom solid 1px #aaa
@@ -68,7 +75,6 @@ hr
 /* << Coloring */
 
 .big-header
-  @extend .group
+  @extends .group
   clear: both;
-  padding: 1%;
-  width: 98%;
+  padding: ratio * ratio * 1%;

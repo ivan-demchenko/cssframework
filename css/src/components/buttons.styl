@@ -5,27 +5,26 @@ input[type='submit'],
 input[type='reset'],
 .button,
 button
+  formtypo()
   background color_button_default
   border button_border
   color color_button_default_font_color
-  vertical-align middle
-  font-size fontsize
-  line-height lineheight
   outline none
-  display inline-block
-  padding form_elem_padding
   overflow visible
   width auto
   cursor pointer
+
   &:hover
     text-decoration none
     color color_button_hovered_font_color
+
   &.big
-    padding (form_elem_padding + 6) (form_elem_padding + 10)
-    font-size fontsize + 4px
+    padding (form_elem_padding * ratio) (form_elem_padding * ratio * ratio * ratio)
+    font-size (fontsize + ratio + ratio)
+
   &.small
-    padding (form_elem_padding - 3) (form_elem_padding)
-    font-size fontsize - 4px
+    padding 0 (form_elem_padding)
+    font-size (fontsize - ratio - ratio)
 
 .button:visited
   color color_button_default_font_color

@@ -1,8 +1,10 @@
+ratio = 1.61803
+
 animation_speed = .2s
 
-fonts = "Segoe UI", Arial, Helvetica, sans-serif
-fontsize = 14px
-lineheight = fontsize * 1.4285
+fonts = Arial, sans-serif
+fontsize = 15px
+lineheight = normal
 
 form_elem_padding = 3px
 
@@ -33,3 +35,12 @@ color_input_normal = #fff
 color_input_focused = #f2fbff
 color_input_border_focused = #64b1ff
 color_input_error = #ffcecb
+
+formtypo()
+  font-family fonts
+  font-size fontsize
+  display inline-block
+  line-height lineheight
+  vertical-align middle
+  padding form_elem_padding (form_elem_padding * ratio)
+  margin 0

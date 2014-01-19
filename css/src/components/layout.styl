@@ -14,17 +14,17 @@
 .disp-tc
   display table-cell
 
-/* >> widths */
+// >> widths
 for num in 10 20 30 40 50 60 70 80 90 100
   {'.w'+num}
     width 1% * num
 
 for num in 10 20 30 40 50 60 70 80 90 100
   {'.w'+num}.po1
-    width (1% * num) - 2
-/* << widths*/
+    width 1% * num
+// << widths
 
-/* >> offsets */
+// >> offsets
 for num in 10 20 30 40 50 60 70 80 90 100
   {'.ol'+num}
     left 1% * num
@@ -32,9 +32,9 @@ for num in 10 20 30 40 50 60 70 80 90 100
 for num in 10 20 30 40 50 60 70 80 90 100
   {'.rl'+num}
     right 1% * num
-/* << offsets*/
+// << offsets
 
-/* >> positionign */
+// >> positionign
 .flt-l
   float left
 .flt-r
@@ -51,7 +51,7 @@ for num in 10 20 30 40 50 60 70 80 90 100
 .pos-a.pos-c
   left 50%
   margin-left -50%
-  
+
 .to-top
   top 0
 
@@ -63,9 +63,9 @@ for num in 10 20 30 40 50 60 70 80 90 100
 
 .to-lft
   left 0
-/* << positioning */
+// << positioning
 
-/* >> margins */
+// >> margins
 .mo1
   margin 1%
 .mt1
@@ -76,9 +76,9 @@ for num in 10 20 30 40 50 60 70 80 90 100
   margin-left 1%
 .mr1
   margin-right 1%
-/* << margins */
+// << margins
 
-/* >> paddings */
+// >> paddings
 .po1
   padding 1%
 .pt1
@@ -89,9 +89,9 @@ for num in 10 20 30 40 50 60 70 80 90 100
   padding-left 1%
 .pr1
   padding-right 1%
-/* << paddings*/
+// << paddings
 
-/* >> bordering */
+// >> bordering
 .brd-t1
   border-top solid 1px lighten(color_gray, color_lighter)
 .brd-b1
@@ -100,4 +100,4 @@ for num in 10 20 30 40 50 60 70 80 90 100
   border-left solid 1px lighten(color_gray, color_lighter)
 .brd-r1
   border-right solid 1px lighten(color_gray, color_lighter)
-/* << bordering*/
+// << bordering

@@ -3,22 +3,22 @@
 
 .toolbar
   background #f0f0f0
-  @extend .group /* common.styl */
+  @extends .group
 
-  .elem 
+  .elem
     position relative
     border-right solid 1px lighten(color_gray, color_lighter)
     padding 0 6px
-    min-height 42px
+    min-height 45px
 
-    label 
+    label
       position relative
       display block
-      font-size 13px
-      line-height 14px
+      font-size (fontsize - ratio - ratio)
+      line-height lineheight
 
     input,select,.button,button
-      font-size 12px
+      font-size (fontsize - ratio - ratio)
       width 90px
       padding 0
       line-height 17px
@@ -26,7 +26,7 @@
       text-align center
     .button:visited
       border button_border
-    
+
     select[size]
       font-size 11px
       height 19px
@@ -48,10 +48,10 @@
       width 170px
 
     input[type='radio'],
-    input[type='checkbox'] 
+    input[type='checkbox']
       height 22px
       width auto
       vertical-align middle
 
-  &:last-child 
+  &:last-child
     border none

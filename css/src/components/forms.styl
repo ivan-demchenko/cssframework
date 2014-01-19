@@ -3,7 +3,6 @@
 
 label
   display inline-block
-  padding form_elem_padding 0
 
 optgroup
   font-style normal
@@ -51,13 +50,11 @@ input[type='text'],
 input[type='password'],
 textarea,
 select
+  formtypo()
   border input_border
   background-color color_input_normal
-  padding form_elem_padding
   width 220px
-  vertical-align middle
-  line-height lineheight
-  multiprop(box-sizing, border-box)
+  height lineheight
 
   &:focus
     background-color color_input_focused
@@ -106,7 +103,6 @@ form
     li
       display block
       float left
-      min-height 56px
       position relative
 
       input[type='color'],
@@ -134,19 +130,19 @@ form
 
   ul.two-col
     li
-      width 48%
+      width (100% / 2)
       padding 1%
 
   ul.three-col
     li
-      width 31.2%
+      width (100% / 3)
       padding 1%
 
   ul.four-col
     li
-      width 23%
+      width (100% / 4)
       padding 1%
 
   ul
     li.fw
-      width 98%
+      width 100%
